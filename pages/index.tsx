@@ -1,5 +1,6 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Head from "next/head";
+import { stampList } from "constants/stampList";
 
 type Props = {
     stamp: string;
@@ -73,6 +74,7 @@ const Home = ({ stamp }: Props) => (
 export const getServerSideProps = ({ query }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
     const check = query.stamp;
     const stamp = !!check && !Array.isArray(check) ? check : "";
+    console.log(stampList[stamp] ? `${stamp}.${stampList[stamp].ext}` : "twista.png");
 
     return {
         props: {
