@@ -1,7 +1,7 @@
-import { NextApiRequest } from "next/types";
+import { IncomingMessage } from "node:http";
 import { parse } from "url";
 
-export const parseRequest = (req: NextApiRequest): string => {
+export const parseRequest = (req: IncomingMessage): string => {
     console.log("HTTP " + req.url);
     const { query } = parse(req.url || "/", true);
     const { stamp } = query || {};
