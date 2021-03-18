@@ -1,11 +1,13 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Head from "next/head";
+import { parseRequest } from "lib/parser";
 
 type Props = {
     url: string;
+    stamp: string;
 };
 
-const Home = ({ url }: Props) => (
+const Home = ({ url, stamp }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <Head>
             <title>Create Next App</title>
@@ -26,6 +28,10 @@ const Home = ({ url }: Props) => (
 
             <p className="mt-3 text-2xl">
                 <code>{url}</code>
+            </p>
+
+            <p className="mt-3 text-2xl">
+                <code>{stamp}</code>
             </p>
 
             <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
@@ -71,10 +77,12 @@ const Home = ({ url }: Props) => (
 );
 
 export const getServerSideProps = ({ req }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
+    const stamp = parseRequest(req);
     const { url } = req;
     return {
         props: {
             url,
+            stamp,
         },
     };
 };
