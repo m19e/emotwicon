@@ -1,13 +1,11 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Head from "next/head";
-import { parseRequest } from "lib/parser";
 
 type Props = {
-    url: string;
     stamp: string;
 };
 
-const Home = ({ url, stamp }: Props) => (
+const Home = ({ stamp }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <Head>
             <title>Create Next App</title>
@@ -24,10 +22,6 @@ const Home = ({ url, stamp }: Props) => (
 
             <p className="mt-3 text-2xl">
                 Get started by editing <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">pages/index.js</code>
-            </p>
-
-            <p className="mt-3 text-2xl">
-                <code>{url}</code>
             </p>
 
             <p className="mt-3 text-2xl">
@@ -76,12 +70,12 @@ const Home = ({ url, stamp }: Props) => (
     </div>
 );
 
-export const getServerSideProps = ({ req }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
-    const stamp = parseRequest(req);
-    const { url } = req;
+export const getServerSideProps = ({ query }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
+    const check = query.stamp;
+    const stamp = !!check && !Array.isArray(check) ? check : "";
+
     return {
         props: {
-            url,
             stamp,
         },
     };
