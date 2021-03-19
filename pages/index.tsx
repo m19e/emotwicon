@@ -1,9 +1,10 @@
-import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Head from "next/head";
-import { stampList } from "constants/stampList";
+import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
+import { Stamp } from "types";
+import { stampList, defaultStamp } from "constants/stampList";
 
 type Props = {
-    stamp: string;
+    stamp: Stamp;
 };
 
 const Home = ({ stamp }: Props) => (
@@ -26,7 +27,7 @@ const Home = ({ stamp }: Props) => (
             </p>
 
             <p className="mt-3 text-2xl">
-                <code>{stamp}</code>
+                <code>{JSON.stringify(stamp)}</code>
             </p>
 
             <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
@@ -73,8 +74,8 @@ const Home = ({ stamp }: Props) => (
 
 export const getServerSideProps = ({ query }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
     const check = query.stamp;
-    const stamp = !!check && !Array.isArray(check) ? check : "";
-    console.log(stampList[stamp] ? `${stamp}.${stampList[stamp].ext}` : "twista.png");
+    const stampName = !!check && !Array.isArray(check) ? check : "";
+    const stamp = stampList[stampName] ? stampList[stampName] : defaultStamp;
 
     return {
         props: {
