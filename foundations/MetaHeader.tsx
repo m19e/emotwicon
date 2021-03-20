@@ -16,6 +16,7 @@ type Props = {
 const MetaHeader = ({ title, description, ogTitle, ogDescription, ogImage, twTitle, twDescription, twImage, twUrl, twCard }: Props) => (
     <Head>
         <title>{title}</title>
+        <link rel="icon" href="/favicon.ico" />
         <meta name="description" content={description} />
         <meta property="og:site_name" content="Clara" />
         <meta property="og:title" content={ogTitle} />
