@@ -1,4 +1,3 @@
-import Head from "next/head";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
