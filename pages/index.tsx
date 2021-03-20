@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { Stamp } from "types";
+import MetaHeader from "foundations/MetaHeader";
 import { stampList, defaultStamp } from "constants/stampList";
 
 type Props = {
@@ -9,11 +10,18 @@ type Props = {
 
 const Home = ({ stamp }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-        <Head>
-            <title>Create Next App</title>
-            <link rel="icon" href="/favicon.ico" />
-        </Head>
-
+        <MetaHeader
+            title="twista"
+            description="twista - ツイッターで使える絵文字・スタンプ"
+            ogTitle={stamp.name}
+            ogDescription="twista"
+            ogImage={`http://localhost:3000/stamps/${stamp.fullpath}`}
+            twTitle={stamp.name}
+            twDescription="twista"
+            twImage={`http://localhost:3000/stamps/${stamp.fullpath}`}
+            twUrl="http://localhost:3000"
+            twCard="summary"
+        />
         <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
             <h1 className="text-6xl font-bold">
                 Welcome to{" "}
