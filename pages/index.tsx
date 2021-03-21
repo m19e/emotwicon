@@ -5,9 +5,10 @@ import { stampList, defaultStamp } from "constants/stampList";
 
 type Props = {
     stamp: Stamp;
+    stamps: Stamp[];
 };
 
-const Home = ({ stamp }: Props) => (
+const Home = ({ stamp, stamps }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <MetaHeader
             title="twista"
@@ -83,10 +84,12 @@ export const getServerSideProps = ({ query }: GetServerSidePropsContext): GetSer
     const check = query.stamp;
     const stampName = !!check && !Array.isArray(check) ? check : "";
     const stamp = stampList[stampName] ? stampList[stampName] : defaultStamp;
+    const stamps = Object.entries(stampList).map(([_, v]) => v);
 
     return {
         props: {
             stamp,
+            stamps,
         },
     };
 };
