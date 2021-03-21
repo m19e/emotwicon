@@ -1,6 +1,6 @@
 export type Stamp = {
     name: string;
-    ext: string;
+    ext: "png";
     fullpath: string;
 };
 
