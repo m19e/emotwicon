@@ -39,13 +39,15 @@ const Home = ({ stamp, stamps }: Props) => (
                 <code>{JSON.stringify(stamp)}</code>
             </p>
 
-            {stamps.map((s, i) => (
-                <Link key={i} href={`/stamps/${s.fullpath}`}>
-                    <a>
-                        <img src={`http://localhost:3000/stamps/${s.fullpath}`} alt={s.name} />
-                    </a>
-                </Link>
-            ))}
+            <div className="flex flex-wrap justify-center">
+                {stamps.map((s, i) => (
+                    <Link key={i} href={`/stamps/${s.fullpath}`}>
+                        <a>
+                            <img src={`http://localhost:3000/stamps/${s.fullpath}`} alt={s.name} />
+                        </a>
+                    </Link>
+                ))}
+            </div>
         </main>
 
         <footer className="flex items-center justify-center w-full h-24 border-t">
