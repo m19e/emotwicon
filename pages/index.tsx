@@ -36,7 +36,7 @@ const Home = ({ stamp, stamps }: Props) => (
             </p>
 
             <p className="mt-3 text-2xl">
-                <code>{JSON.stringify(stamp)}</code>
+                <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">{JSON.stringify(stamp)}</code>
             </p>
 
             <div className="flex flex-wrap justify-center">
