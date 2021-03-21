@@ -82,4 +82,19 @@ export const stampList: StampList = {
         ext: "png",
         fullpath: "kit_yoyu.png",
     },
+    hnn_aha: {
+        name: "hnn_aha",
+        ext: "png",
+        fullpath: "hnn_aha.png",
+    },
+    hnn_yaha: {
+        name: "hnn_yaha",
+        ext: "png",
+        fullpath: "hnn_yaha.png",
+    },
+    hnn_complain: {
+        name: "hnn_complain",
+        ext: "png",
+        fullpath: "hnn_complain.png",
+    },
 };
