@@ -47,4 +47,24 @@ export const stampList: StampList = {
         ext: "png",
         fullpath: "askr_nice.png",
     },
+    hgc_oko: {
+        name: "hgc_oko",
+        ext: "png",
+        fullpath: "hgc_oko.png",
+    },
+    hgc_sigh: {
+        name: "hgc_sigh",
+        ext: "png",
+        fullpath: "hgc_sigh.png",
+    },
+    hgc_empty: {
+        name: "hgc_empty",
+        ext: "png",
+        fullpath: "hgc_empty.png",
+    },
+    hgc_greatkit: {
+        name: "hgc_greatkit",
+        ext: "png",
+        fullpath: "hgc_greatkit.png",
+    },
 };
