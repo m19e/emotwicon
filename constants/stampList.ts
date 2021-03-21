@@ -32,4 +32,19 @@ export const stampList: StampList = {
         ext: "png",
         fullpath: "class4.png",
     },
+    askr_nice: {
+        name: "askr_nice",
+        ext: "png",
+        fullpath: "askr_nice.png",
+    },
+    askr_help: {
+        name: "askr_help",
+        ext: "png",
+        fullpath: "askr_nice.png",
+    },
+    askr_hgcsorry: {
+        name: "askr_hgcsorry",
+        ext: "png",
+        fullpath: "askr_nice.png",
+    },
 };
