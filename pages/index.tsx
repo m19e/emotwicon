@@ -24,15 +24,13 @@ const Home = ({ stamp, stamps }: Props) => (
             twCard="summary"
         />
         <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
-            <p className="mt-3 text-2xl">
-                <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">{JSON.stringify(stamp)}</code>
-            </p>
+            <p className="mt-3 text-2xl">{/* <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">{JSON.stringify(stamp)}</code> */}</p>
 
             <div className="flex flex-wrap justify-center">
                 {stamps.map((s, i) => (
                     <Link key={i} href={`/stamps/${s.fullpath}`}>
                         <a>
-                            <img src={`http://localhost:3000/stamps/${s.fullpath}`} alt={s.name} />
+                            <img src={`/stamps/${s.fullpath}`} alt={s.name} />
                         </a>
                     </Link>
                 ))}
