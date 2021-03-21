@@ -1,4 +1,5 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
+import Link from "next/link";
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
 import { stampList, defaultStamp } from "constants/stampList";
@@ -37,6 +38,14 @@ const Home = ({ stamp, stamps }: Props) => (
             <p className="mt-3 text-2xl">
                 <code>{JSON.stringify(stamp)}</code>
             </p>
+
+            {stamps.map((s, i) => (
+                <Link key={i} href={`/stamps/${s.fullpath}`}>
+                    <a>
+                        <img src={`http://localhost:3000/stamps/${s.fullpath}`} alt={s.name} />
+                    </a>
+                </Link>
+            ))}
 
             <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
                 <a href="https://nextjs.org/docs" className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600">
