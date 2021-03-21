@@ -7,31 +7,31 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
-    class: {
-        name: "class",
-        ext: "png",
-        fullpath: "class.png",
-    },
-    class1: {
-        name: "class1",
-        ext: "png",
-        fullpath: "class1.png",
-    },
-    class2: {
-        name: "class2",
-        ext: "png",
-        fullpath: "class2.png",
-    },
-    class3: {
-        name: "class3",
-        ext: "png",
-        fullpath: "class3.png",
-    },
-    class4: {
-        name: "class4",
-        ext: "png",
-        fullpath: "class4.png",
-    },
+    // class: {
+    //     name: "class",
+    //     ext: "png",
+    //     fullpath: "class.png",
+    // },
+    // class1: {
+    //     name: "class1",
+    //     ext: "png",
+    //     fullpath: "class1.png",
+    // },
+    // class2: {
+    //     name: "class2",
+    //     ext: "png",
+    //     fullpath: "class2.png",
+    // },
+    // class3: {
+    //     name: "class3",
+    //     ext: "png",
+    //     fullpath: "class3.png",
+    // },
+    // class4: {
+    //     name: "class4",
+    //     ext: "png",
+    //     fullpath: "class4.png",
+    // },
     askr_nice: {
         name: "askr_nice",
         ext: "png",
@@ -40,12 +40,12 @@ export const stampList: StampList = {
     askr_help: {
         name: "askr_help",
         ext: "png",
-        fullpath: "askr_nice.png",
+        fullpath: "askr_help.png",
     },
     askr_hgcsorry: {
         name: "askr_hgcsorry",
         ext: "png",
-        fullpath: "askr_nice.png",
+        fullpath: "askr_hgcsorry.png",
     },
     hgc_oko: {
         name: "hgc_oko",
