@@ -5,5 +5,5 @@ export type Stamp = {
 };
 
 export type StampList = {
-    [stamp: string]: Stamp;
+    [key: string]: Stamp;
 };
