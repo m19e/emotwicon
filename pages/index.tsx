@@ -33,6 +33,7 @@ const Home = ({ stamp, stamps }: Props) => (
                         <Image src={`/stamps/${s.fullpath}`} alt={s.name} width={144} height={144} />
                     </div>
                 ))}
+                <div className="w-36"></div>
             </div>
         </main>
 
