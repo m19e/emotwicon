@@ -10,7 +10,7 @@ type Props = {
 };
 
 const Home = ({ stamp, stamps }: Props) => (
-    <div className="flex flex-col items-center justify-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <MetaHeader
             title="#emotwicon"
             description="#emotwicon - ツイッターで使える絵文字・スタンプ"
