@@ -15,10 +15,10 @@ const Home = ({ stamp, stamps }: Props) => (
         <MetaHeader
             title="twista"
             description="twista - ツイッターで使える絵文字・スタンプ"
-            ogTitle={stamp.name}
+            ogTitle={stamp.title}
             ogDescription="twista - ツイッターで使える絵文字・スタンプ"
             ogImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
-            twTitle={stamp.name}
+            twTitle={stamp.title}
             twDescription="twista - ツイッターで使える絵文字・スタンプ"
             twImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
             twUrl="http://localhost:3000"
