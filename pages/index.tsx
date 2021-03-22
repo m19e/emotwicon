@@ -16,10 +16,10 @@ const Home = ({ stamp, stamps }: Props) => (
             description="twista - ツイッターで使える絵文字・スタンプ"
             ogTitle={stamp.name}
             ogDescription="twista - ツイッターで使える絵文字・スタンプ"
-            ogImage={`http://localhost:3000/stamps/${stamp.fullpath}`}
+            ogImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
             twTitle={stamp.name}
             twDescription="twista - ツイッターで使える絵文字・スタンプ"
-            twImage={`http://localhost:3000/stamps/${stamp.fullpath}`}
+            twImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
             twUrl="http://localhost:3000"
             twCard="summary"
         />
