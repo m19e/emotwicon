@@ -1,5 +1,6 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Link from "next/link";
+import Image from "next/image";
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
 import { stampList, defaultStamp } from "constants/stampList";
@@ -30,7 +31,7 @@ const Home = ({ stamp, stamps }: Props) => (
                 {stamps.map((s, i) => (
                     <Link key={i} href={`/stamps/${s.fullpath}`}>
                         <a>
-                            <img src={`/stamps/${s.fullpath}`} alt={s.name} />
+                            <Image src={`/stamps/${s.fullpath}`} alt={s.name} width={144} height={144} />
                         </a>
                     </Link>
                 ))}
