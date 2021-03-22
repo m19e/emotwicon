@@ -25,7 +25,7 @@ const Home = ({ stamp, stamps }: Props) => (
         />
 
         <header className="flex items-center justify-center w-full h-24 mb-2 bg-twitter border-b">
-            <span className="font-sans font-black text-4xl text-gray-200">#emotwicon</span>
+            <span className="font-sans font-black text-4xl text-gray-100">#emotwicon</span>
         </header>
 
         <main className="flex flex-col items-center justify-center flex-1 text-center">
