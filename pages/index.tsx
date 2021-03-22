@@ -1,15 +1,18 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
+import { useUserAgent } from "next-useragent";
 import { Stamp } from "types";
 import { stampList, defaultStamp } from "constants/stampList";
 import MetaHeader from "foundations/MetaHeader";
 import DefaultStampListItem from "components/molecules/StampListItem/Default";
+import MobileStampListItem from "components/molecules/StampListItem/Mobile";
 
 type Props = {
     stamp: Stamp;
     stamps: Stamp[];
+    touchable: boolean;
 };
 
-const Home = ({ stamp, stamps }: Props) => (
+const Home = ({ stamp, stamps, touchable }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <MetaHeader
             title="#emotwicon"
@@ -31,7 +34,7 @@ const Home = ({ stamp, stamps }: Props) => (
         <main className="flex flex-col items-center justify-center flex-1 text-center">
             <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {stamps.map((s, i) => (
-                    <DefaultStampListItem key={i} stamp={s} />
+                    <div key={i}>{touchable ? <MobileStampListItem stamp={s} /> : <DefaultStampListItem stamp={s} />}</div>
                 ))}
             </div>
         </main>
@@ -52,16 +55,20 @@ const Home = ({ stamp, stamps }: Props) => (
     </div>
 );
 
-export const getServerSideProps = ({ query }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
+export const getServerSideProps = ({ query, req }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
     const check = query.stamp;
     const stampName = !!check && !Array.isArray(check) ? check : "";
     const stamp = stampList[stampName] ? stampList[stampName] : defaultStamp;
     const stamps = Object.entries(stampList).map(([_, v]) => v);
 
+    const { isMobile, isTablet } = useUserAgent(req.headers["user-agent"]);
+    const touchable = isMobile || isTablet;
+
     return {
         props: {
             stamp,
             stamps,
+            touchable,
         },
     };
 };
