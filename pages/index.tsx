@@ -1,8 +1,8 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import Image from "next/image";
 import { Stamp } from "types";
-import MetaHeader from "foundations/MetaHeader";
 import { stampList, defaultStamp } from "constants/stampList";
+import MetaHeader from "foundations/MetaHeader";
 import StampListItem from "components/molecules/StampListItem";
 
 type Props = {
