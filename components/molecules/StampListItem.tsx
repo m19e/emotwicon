@@ -13,7 +13,17 @@ const StampListItem = ({ stamp }: Props) => (
             </div>
             <div className="absolute inset-0 z-10 flex-center flex-col bg-transparent transition-opacity opacity-0 group-hover:opacity-100">
                 <div className="h-1/2 w-full flex flex-col justify-end">
-                    <span className="py-1.5 mb-1 rounded-md shadow text-white text-sm font-bold font-sans bg-twitter">ツイートする</span>
+                    <a
+                        className="py-1.5 mb-1 rounded-md shadow text-white text-sm font-bold font-sans bg-twitter"
+                        href={
+                            "https://twitter.com/intent/tweet?text=" +
+                            encodeURIComponent("#emotwicon " + process.env.NEXT_PUBLIC_SITE_ROOT_URL + "/?stamp=" + stamp.name)
+                        }
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ツイートする
+                    </a>
                 </div>
                 <div className="h-1/2 w-full flex flex-col justify-between">
                     <span className="py-1.5 mt-1 rounded-md shadow text-black text-sm font-bold font-sans bg-gray-200">コピーする</span>
