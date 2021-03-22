@@ -12,7 +12,7 @@ type Props = {
     touchable: boolean;
 };
 
-const Home = ({ stamp, stamps, touchable }: Props) => (
+const Emotwicon = ({ stamp, stamps, touchable }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <MetaHeader
             title="#emotwicon"
@@ -73,4 +73,4 @@ export const getServerSideProps = ({ query, req }: GetServerSidePropsContext): G
     };
 };
 
-export default Home;
+export default Emotwicon;
