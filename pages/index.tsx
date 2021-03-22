@@ -20,7 +20,7 @@ const Home = ({ stamp, stamps }: Props) => (
             twTitle={stamp.title}
             twDescription="twista - ツイッターで使える絵文字・スタンプ"
             twImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
-            twUrl="http://localhost:3000"
+            twUrl={process.env.NEXT_PUBLIC_SITE_ROOT_URL}
             twCard="summary"
         />
         <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
