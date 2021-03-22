@@ -6,7 +6,7 @@
 }
 
 .bg-twitter {
-    background-color: rgb(29, 161, 242);
+    background-color: #1da1f2;
 }
 
 @tailwind utilities;
