@@ -1,5 +1,4 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
-import Image from "next/image";
 import { Stamp } from "types";
 import { stampList, defaultStamp } from "constants/stampList";
 import MetaHeader from "foundations/MetaHeader";
