@@ -29,11 +29,9 @@ const Home = ({ stamp, stamps }: Props) => (
 
             <div className="flex flex-wrap justify-center">
                 {stamps.map((s, i) => (
-                    <Link key={i} href={`/stamps/${s.fullpath}`}>
-                        <a>
-                            <Image src={`/stamps/${s.fullpath}`} alt={s.name} width={144} height={144} />
-                        </a>
-                    </Link>
+                    <div key={i}>
+                        <Image src={`/stamps/${s.fullpath}`} alt={s.name} width={144} height={144} />
+                    </div>
                 ))}
             </div>
         </main>
