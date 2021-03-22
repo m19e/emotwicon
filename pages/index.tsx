@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
 import { stampList, defaultStamp } from "constants/stampList";
+import StampListItem from "components/molecules/StampListItem";
 
 type Props = {
     stamp: Stamp;
@@ -28,9 +29,7 @@ const Home = ({ stamp, stamps }: Props) => (
 
             <div className="grid grid-cols-2">
                 {stamps.map((s, i) => (
-                    <div key={i}>
-                        <Image src={`/stamps/${s.fullpath}`} alt={s.name} width={144} height={144} />
-                    </div>
+                    <StampListItem key={i} stamp={s} />
                 ))}
             </div>
         </main>
