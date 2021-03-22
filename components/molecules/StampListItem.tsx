@@ -12,10 +12,10 @@ const StampListItem = ({ stamp }: Props) => (
                 <Img src={`/stamps/${stamp.fullpath}`} alt={stamp.name} width={144} height={144} />
             </div>
             <div className="absolute inset-0 z-10 flex-center flex-col bg-transparent transition-opacity opacity-0 group-hover:opacity-100">
-                <div className="h-1/2 flex flex-col justify-end">
+                <div className="h-1/2 w-full flex flex-col justify-end">
                     <span className="bg-blue-300 hover:bg-blue-400">ツイートする</span>
                 </div>
-                <div className="h-1/2 flex flex-col justify-between">
+                <div className="h-1/2 w-full flex flex-col justify-between">
                     <span className="bg-gray-200 hover:bg-gray-300">コピーする</span>
                     <span className="text-xs">by @{stamp.author}</span>
                 </div>
