@@ -26,7 +26,7 @@ const Home = ({ stamp, stamps }: Props) => (
         <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
             <p className="mt-3 text-2xl">{/* <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">{JSON.stringify(stamp)}</code> */}</p>
 
-            <div className="grid grid-cols-2">
+            <div className="grid grid-cols-2 gap-4">
                 {stamps.map((s, i) => (
                     <StampListItem key={i} stamp={s} />
                 ))}
