@@ -8,8 +8,16 @@ type Props = {
 const CopyButton = ({ text }: Props) => {
     const [copied, setCopied] = useState(false);
 
+    const handleCopy = () => {
+        if (copied) return;
+        setCopied(true);
+        setTimeout(() => {
+            setCopied(false);
+        }, 2000);
+    };
+
     return (
-        <CopyToClipboard text={text} onCopy={() => setCopied(true)}>
+        <CopyToClipboard text={text} onCopy={() => handleCopy()}>
             {copied ? (
                 <span className="py-1.5 mt-1 rounded-md shadow bg-gray-100 flex-center">
                     <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#1da1f2">
