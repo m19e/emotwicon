@@ -1,11 +1,11 @@
 import { Stamp, StampList } from "types";
 
 export const defaultStamp: Stamp = {
-    title: "twista",
-    name: "twista",
+    title: "#emotwicon",
+    name: "emotwicon",
     ext: "png",
-    fullpath: "twista.png",
-    author: "Versas_me",
+    fullpath: "emotwicon.png",
+    author: "m19e",
 };
 
 export const stampList: StampList = {
