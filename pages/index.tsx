@@ -23,6 +23,11 @@ const Home = ({ stamp, stamps }: Props) => (
             twUrl={process.env.NEXT_PUBLIC_SITE_ROOT_URL}
             twCard="summary"
         />
+
+        <header className="flex items-center justify-center w-full h-24 mb-2 bg-twitter border-b">
+            <span className="font-sans font-black text-4xl text-gray-200">#emotwicon</span>
+        </header>
+
         <main className="flex flex-col items-center justify-center flex-1 text-center">
             <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {stamps.map((s, i) => (
