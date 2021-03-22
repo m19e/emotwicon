@@ -8,10 +8,10 @@ type Props = {
 const StampListItem = ({ stamp }: Props) => (
     <div className="w-44 h-44 flex-center rounded-lg border border-gray-200" style={{ maxWidth: "45vw" }}>
         <div className="relative group">
-            <div className="group-hover:opacity-50">
+            <div className="transition-opacity group-hover:opacity-50">
                 <Img src={`/stamps/${stamp.fullpath}`} alt={stamp.name} width={144} height={144} />
             </div>
-            <div className="absolute inset-0 z-10 flex-center flex-col bg-transparent opacity-0 hover:opacity-100">
+            <div className="absolute inset-0 z-10 flex-center flex-col bg-transparent transition-opacity opacity-0 group-hover:opacity-100">
                 <span>ツイートする</span>
                 <span>コピーする</span>
                 <span className="text-xs">by @{stamp.author}</span>
