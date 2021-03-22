@@ -1,11 +1,11 @@
+import { ReactNode } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 type Props = {
     text: string;
+    children: ReactNode;
 };
 
-const CopyButton = ({ text }: Props) => {
-    return <CopyToClipboard text={text}>コピーする</CopyToClipboard>;
-};
+const CopyButton = ({ text, children }: Props) => <CopyToClipboard text={text}>{children}</CopyToClipboard>;
 
 export default CopyButton;
