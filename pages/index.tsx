@@ -27,7 +27,7 @@ const Home = ({ stamp, stamps }: Props) => (
         <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
             <p className="mt-3 text-2xl">{/* <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">{JSON.stringify(stamp)}</code> */}</p>
 
-            <div className="flex flex-wrap justify-center">
+            <div className="grid grid-cols-2">
                 {stamps.map((s, i) => (
                     <div key={i}>
                         <Image src={`/stamps/${s.fullpath}`} alt={s.name} width={144} height={144} />
