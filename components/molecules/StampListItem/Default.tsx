@@ -6,7 +6,7 @@ type Props = {
     stamp: Stamp;
 };
 
-const StampListItem = ({ stamp }: Props) => (
+const Default = ({ stamp }: Props) => (
     <div className="w-44 h-44 flex-center rounded-2xl bg-white border-2 border-gray-200" style={{ maxWidth: "45vw" }}>
         <div className="relative group">
             <div className="flex-center transition-opacity group-hover:opacity-25">
@@ -35,4 +35,4 @@ const StampListItem = ({ stamp }: Props) => (
     </div>
 );
 
-export default StampListItem;
+export default Default;
