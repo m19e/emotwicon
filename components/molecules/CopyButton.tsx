@@ -3,9 +3,14 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 
 type Props = {
     text: string;
-    children: ReactNode;
 };
 
-const CopyButton = ({ text, children }: Props) => <CopyToClipboard text={text}>{children}</CopyToClipboard>;
+const CopyButton = ({ text }: Props) => {
+    return (
+        <CopyToClipboard text={text}>
+            <span className="py-1.5 mt-1 rounded-md shadow text-black text-sm font-bold font-sans bg-gray-200 cursor-pointer">コピーする</span>
+        </CopyToClipboard>
+    );
+};
 
 export default CopyButton;
