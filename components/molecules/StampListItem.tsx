@@ -17,7 +17,7 @@ const StampListItem = ({ stamp }: Props) => (
                 </div>
                 <div className="h-1/2 w-full flex flex-col justify-between">
                     <span className="py-1 mt-1 rounded-md text-black font-bold bg-gray-200">コピーする</span>
-                    <span className="text-xs">by @{stamp.author}</span>
+                    <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span>
                 </div>
             </div>
         </div>
