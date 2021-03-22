@@ -24,7 +24,7 @@ const Home = ({ stamp, stamps }: Props) => (
             twCard="summary"
         />
         <main className="flex flex-col items-center justify-center flex-1 text-center">
-            <div className="grid grid-cols-2 gap-2">
+            <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {stamps.map((s, i) => (
                     <StampListItem key={i} stamp={s} />
                 ))}
