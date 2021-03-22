@@ -1,5 +1,6 @@
 import Img from "next/image";
 import { Stamp } from "types";
+import CopyButton from "components/molecules/CopyButton";
 
 type Props = {
     stamp: Stamp;
@@ -26,7 +27,9 @@ const StampListItem = ({ stamp }: Props) => (
                     </a>
                 </div>
                 <div className="h-1/2 w-full flex flex-col justify-between">
-                    <span className="py-1.5 mt-1 rounded-md shadow text-black text-sm font-bold font-sans bg-gray-200">コピーする</span>
+                    <CopyButton text={"#emotwicon " + process.env.NEXT_PUBLIC_SITE_ROOT_URL + "/?stamp=" + stamp.name}>
+                        <span className="py-1.5 mt-1 rounded-md shadow text-black text-sm font-bold font-sans bg-gray-200">コピーする</span>
+                    </CopyButton>
                     <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span>
                 </div>
             </div>
