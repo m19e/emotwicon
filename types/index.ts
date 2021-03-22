@@ -3,6 +3,7 @@ export type Stamp = {
     name: string;
     ext: "png";
     fullpath: string;
+    author: string;
 };
 
 export type StampList = {
