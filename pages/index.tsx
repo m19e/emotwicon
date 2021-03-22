@@ -12,13 +12,13 @@ type Props = {
 const Home = ({ stamp, stamps }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
         <MetaHeader
-            title="twista"
-            description="twista - ツイッターで使える絵文字・スタンプ"
+            title="#emotwicon"
+            description="#emotwicon - ツイッターで使える絵文字・スタンプ"
             ogTitle={stamp.title}
-            ogDescription="twista - ツイッターで使える絵文字・スタンプ"
+            ogDescription="#emotwicon - ツイッターで使える絵文字・スタンプ"
             ogImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
             twTitle={stamp.title}
-            twDescription="twista - ツイッターで使える絵文字・スタンプ"
+            twDescription="#emotwicon - ツイッターで使える絵文字・スタンプ"
             twImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
             twUrl={process.env.NEXT_PUBLIC_SITE_ROOT_URL}
             twCard="summary"
