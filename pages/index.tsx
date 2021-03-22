@@ -36,11 +36,11 @@ const Home = ({ stamp, stamps }: Props) => (
             </div>
         </main>
 
-        <footer className="flex items-center justify-center w-full h-24 mt-2 border-t">
-            <span className="text-lg">
+        <footer className="flex items-center justify-center w-full h-24 mt-2 bg-twitter border-t">
+            <span className="font-sans text-lg text-gray-100">
                 by{" "}
                 <a
-                    className="hover:text-blue-400 border-b border-opacity-0 border-blue-400 hover:border-opacity-100"
+                    className="border-b border-opacity-0 border-gray-100 hover:border-opacity-100"
                     href="https://github.com/m19e"
                     target="_blank"
                     rel="noopener noreferrer"
