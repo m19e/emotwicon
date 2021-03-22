@@ -13,10 +13,10 @@ const StampListItem = ({ stamp }: Props) => (
             </div>
             <div className="absolute inset-0 z-10 flex-center flex-col bg-transparent transition-opacity opacity-0 group-hover:opacity-100">
                 <div className="h-1/2 w-full flex flex-col justify-end">
-                    <span className="rounded-md bg-blue-300 hover:bg-blue-400">ツイートする</span>
+                    <span className="py-1 mb-1 rounded-md text-white font-bold bg-twitter">ツイートする</span>
                 </div>
                 <div className="h-1/2 w-full flex flex-col justify-between">
-                    <span className="rounded-md bg-gray-200 hover:bg-gray-300">コピーする</span>
+                    <span className="py-1 mt-1 rounded-md text-black font-bold bg-gray-200">コピーする</span>
                     <span className="text-xs">by @{stamp.author}</span>
                 </div>
             </div>
