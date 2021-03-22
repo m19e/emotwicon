@@ -26,9 +26,9 @@ const Default = ({ stamp }: Props) => (
                         ツイートする
                     </a>
                 </div>
-                <div className="h-1/2 w-full flex flex-col justify-between">
+                <div className="h-1/2 w-full flex flex-col justify-start">
                     <CopyButton text={"#emotwicon " + process.env.NEXT_PUBLIC_SITE_ROOT_URL + "/?stamp=" + stamp.name} />
-                    <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span>
+                    {/* <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span> */}
                 </div>
             </div>
         </div>
