@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 type Props = {
