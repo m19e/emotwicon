@@ -11,7 +11,7 @@ const CopyButton = ({ text }: Props) => {
     return (
         <CopyToClipboard text={text} onCopy={() => setCopied(true)}>
             {copied ? (
-                <span className="py-1.5 mt-1 rounded-md shadow bg-gray-200 flex-center">
+                <span className="py-1.5 mt-1 rounded-md shadow bg-gray-100 flex-center">
                     <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#1da1f2">
                         <path
                             fillRule="evenodd"
@@ -21,7 +21,7 @@ const CopyButton = ({ text }: Props) => {
                     </svg>
                 </span>
             ) : (
-                <span className="py-1.5 mt-1 rounded-md shadow text-black text-sm font-bold font-sans bg-gray-200 cursor-pointer">コピーする</span>
+                <span className="py-1.5 mt-1 rounded-md shadow text-black text-sm font-bold font-sans bg-gray-100 cursor-pointer">コピーする</span>
             )}
         </CopyToClipboard>
     );
