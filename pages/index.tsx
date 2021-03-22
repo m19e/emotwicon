@@ -2,7 +2,7 @@ import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { Stamp } from "types";
 import { stampList, defaultStamp } from "constants/stampList";
 import MetaHeader from "foundations/MetaHeader";
-import StampListItem from "components/molecules/StampListItem";
+import DefaultStampListItem from "components/molecules/StampListItem/Default";
 
 type Props = {
     stamp: Stamp;
@@ -31,7 +31,7 @@ const Home = ({ stamp, stamps }: Props) => (
         <main className="flex flex-col items-center justify-center flex-1 text-center">
             <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
                 {stamps.map((s, i) => (
-                    <StampListItem key={i} stamp={s} />
+                    <DefaultStampListItem key={i} stamp={s} />
                 ))}
             </div>
         </main>
