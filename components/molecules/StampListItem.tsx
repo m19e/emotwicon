@@ -12,7 +12,7 @@ const StampListItem = ({ stamp }: Props) => (
             <div className="absolute inset-0 z-10 flex-center flex-col bg-gray-300 opacity-0 hover:opacity-100">
                 <span>Twitterでつぶやく</span>
                 <span>コピーする</span>
-                <span>{"by {スタンプ作者}"}</span>
+                <span className="text-xs">by @{stamp.author}</span>
             </div>
         </div>
     </div>
