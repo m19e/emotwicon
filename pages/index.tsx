@@ -15,13 +15,13 @@ type Props = {
 const Emotwicon = ({ stamp, stamps, touchable }: Props) => (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
         <MetaHeader
-            title="#emotwicon"
-            description="#emotwicon - ツイッターで使える絵文字・スタンプ"
+            title="#emotwicon ツイッターで使える絵文字・スタンプ"
+            description="#emotwicon"
             ogTitle={stamp.title}
-            ogDescription="#emotwicon - ツイッターで使える絵文字・スタンプ"
+            ogDescription="#emotwicon"
             ogImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
             twTitle={stamp.title}
-            twDescription="#emotwicon - ツイッターで使える絵文字・スタンプ"
+            twDescription="#emotwicon"
             twImage={process.env.NEXT_PUBLIC_SITE_ROOT_URL + `/stamps/${stamp.fullpath}`}
             twUrl={process.env.NEXT_PUBLIC_SITE_ROOT_URL}
             twCard="summary"
