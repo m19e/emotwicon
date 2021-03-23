@@ -6,7 +6,7 @@ type Props = {
     stamp: Stamp;
 };
 
-const StampListItem = ({ stamp }: Props) => (
+const Default = ({ stamp }: Props) => (
     <div className="w-44 h-44 flex-center rounded-2xl bg-white border-2 border-gray-200" style={{ maxWidth: "45vw" }}>
         <div className="relative group">
             <div className="flex-center transition-opacity group-hover:opacity-25">
@@ -26,13 +26,13 @@ const StampListItem = ({ stamp }: Props) => (
                         ツイートする
                     </a>
                 </div>
-                <div className="h-1/2 w-full flex flex-col justify-between">
+                <div className="h-1/2 w-full flex flex-col justify-start">
                     <CopyButton text={"#emotwicon " + process.env.NEXT_PUBLIC_SITE_ROOT_URL + "/?stamp=" + stamp.name} />
-                    <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span>
+                    {/* <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span> */}
                 </div>
             </div>
         </div>
     </div>
 );
 
-export default StampListItem;
+export default Default;
