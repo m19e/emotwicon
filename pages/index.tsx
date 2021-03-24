@@ -22,9 +22,7 @@ const getStampByQuery = (query: ParsedUrlQuery): Stamp => {
 };
 
 export const getServerSideProps = ({ query, req }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
-    const check = query.stamp;
-    const stampName = !!check && !Array.isArray(check) ? check : "";
-    const stamp = stampList[stampName] ? stampList[stampName] : defaultStamp;
+    const stamp = getStampByQuery(query);
     const stamps = Object.entries(stampList).map(([_, v]) => v);
 
     const { isMobile, isTablet } = useUserAgent(req.headers["user-agent"]);
