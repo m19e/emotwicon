@@ -1,6 +1,6 @@
+import { Stamp } from "types";
 import DefaultStampListItem from "components/molecules/StampListItem/Default";
 import MobileStampListItem from "components/molecules/StampListItem/Mobile";
-import { Stamp } from "types";
 
 type Props = {
     stamps: Stamp[];
