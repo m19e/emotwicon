@@ -3,7 +3,7 @@ import { useUserAgent } from "next-useragent";
 import { Stamp } from "types";
 import { getJKstampByQuery } from "lib/stamp";
 import { JKstampList } from "constants/stampList";
-import Home from "components/templates/Home";
+import JKpage from "components/templates/JK";
 
 type Props = {
     stamp: Stamp;
@@ -11,7 +11,7 @@ type Props = {
     touchable: boolean;
 };
 
-const JK = ({ stamp, stamps, touchable }: Props) => <Home stamp={stamp} stamps={stamps} touchable={touchable} />;
+const JK = ({ stamp, stamps, touchable }: Props) => <JKpage stamp={stamp} stamps={stamps} touchable={touchable} />;
 
 export const getServerSideProps = ({ query, req }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
     const stamp = getJKstampByQuery(query);
