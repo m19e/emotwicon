@@ -3,8 +3,6 @@ import { useUserAgent } from "next-useragent";
 import { Stamp } from "types";
 import { stampList, defaultStamp } from "constants/stampList";
 import MetaHeader from "foundations/MetaHeader";
-import DefaultStampListItem from "components/molecules/StampListItem/Default";
-import MobileStampListItem from "components/molecules/StampListItem/Mobile";
 import StampList from "components/molecules/StampList";
 
 type Props = {
