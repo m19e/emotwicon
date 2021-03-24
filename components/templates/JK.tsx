@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
 import StampList from "components/molecules/JKstampList";
@@ -24,7 +25,11 @@ const JK = ({ stamp, stamps, touchable }: Props) => (
         />
 
         <header className="flex items-center justify-center w-full h-24 mb-2 bg-twitter border-b">
-            <span className="font-sans font-black text-4xl text-gray-100">#emotwicon</span>
+            <Link href="/">
+                <a>
+                    <span className="font-sans font-black text-4xl text-gray-100">#emotwicon</span>
+                </a>
+            </Link>
         </header>
 
         <main className="flex flex-col items-center justify-center flex-1 text-center">
