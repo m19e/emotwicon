@@ -2,6 +2,7 @@ import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { useUserAgent } from "next-useragent";
 import { Stamp } from "types";
 import { ParsedUrlQuery } from "node:querystring";
+import { getStampByQuery } from "lib/stamp";
 import { stampList, defaultStamp } from "constants/stampList";
 import Home from "components/templates/Home";
 
@@ -12,14 +13,6 @@ type Props = {
 };
 
 const Emotwicon = ({ stamp, stamps, touchable }: Props) => <Home stamp={stamp} stamps={stamps} touchable={touchable} />;
-
-const getStampByQuery = (query: ParsedUrlQuery): Stamp => {
-    const s = query.stamp || "";
-    const name = Array.isArray(s) ? "" : s;
-    const stamp = stampList[name] ?? defaultStamp;
-
-    return stamp;
-};
 
 export const getServerSideProps = ({ query, req }: GetServerSidePropsContext): GetServerSidePropsResult<Props> => {
     const stamp = getStampByQuery(query);
