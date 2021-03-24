@@ -146,14 +146,14 @@ export const JKstampList: StampList = {
         author: "",
     },
     me_sleep: {
-        title: "ふれあちゃん？",
+        title: "寝な。",
         name: "me_sleep",
         ext: "jpg",
         fullpath: "jk/me_sleep.jpg",
         author: "",
     },
     me_straight: {
-        title: "ふれあちゃん？",
+        title: "ツッコまんからなっ",
         name: "me_straight",
         ext: "jpg",
         fullpath: "jk/me_straight.jpg",
