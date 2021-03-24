@@ -11,7 +11,7 @@ const Mobile = ({ stamp }: Props) => {
     const [active, setActive] = useState(false);
 
     return (
-        <div className="w-44 h-44 flex-center rounded-2xl bg-white border-2 border-gray-200" style={{ maxWidth: "45vw" }}>
+        <div className="w-44 h-44 max-w-full flex-center rounded-2xl bg-white border-2 border-gray-200">
             <div className="relative" onClick={() => setActive(true)} onMouseLeave={() => setActive(false)}>
                 <div className={"flex-center transition-opacity " + (active ? "opacity-25" : "")}>
                     <Img src={`/stamps/${stamp.fullpath}`} alt={stamp.name} width={144} height={144} />
