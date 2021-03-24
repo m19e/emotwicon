@@ -101,3 +101,62 @@ export const stampList: StampList = {
         author: "wa_jwa_jpon2",
     },
 };
+
+export const JKstampList: StampList = {
+    ishima_clean: {
+        title: "部屋片付けて。",
+        name: "ishima_clean",
+        ext: "jpg",
+        fullpath: "jk/ishima_clean.jpg",
+        author: "",
+    },
+    ishima_fufu: {
+        title: "フフッ",
+        name: "ishima_fufu",
+        ext: "jpg",
+        fullpath: "jk/ishima_fufu.jpg",
+        author: "",
+    },
+    ishima_sun: {
+        title: "ｽﾝ",
+        name: "ishima_sun",
+        ext: "jpg",
+        fullpath: "jk/ishima_sun.jpg",
+        author: "",
+    },
+    taoru_deny: {
+        title: "ちがうんですよ",
+        name: "taoru_deny",
+        ext: "jpg",
+        fullpath: "jk/taoru_deny.jpg",
+        author: "",
+    },
+    taoru_nandayo: {
+        title: "なんだよぉ…",
+        name: "taoru_nandayo",
+        ext: "jpg",
+        fullpath: "jk/taoru_nandayo.jpg",
+        author: "",
+    },
+    me_flarechan: {
+        title: "ふれあちゃん？",
+        name: "me_flarechan",
+        ext: "jpg",
+        fullpath: "jk/me_flarechan.jpg",
+        author: "",
+    },
+    me_sleep: {
+        title: "寝な。",
+        name: "me_sleep",
+        ext: "jpg",
+        fullpath: "jk/me_sleep.jpg",
+        author: "",
+    },
+    me_straight: {
+        title: "ツッコまんからなっ",
+        name: "me_straight",
+        ext: "jpg",
+        fullpath: "jk/me_straight.jpg",
+        author: "",
+    },
+};
