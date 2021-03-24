@@ -2,8 +2,6 @@ import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { useUserAgent } from "next-useragent";
 import { Stamp } from "types";
 import { stampList, defaultStamp } from "constants/stampList";
-import MetaHeader from "foundations/MetaHeader";
-import StampList from "components/molecules/StampList";
 import Home from "components/templates/Home";
 
 type Props = {
