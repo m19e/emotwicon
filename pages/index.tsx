@@ -1,9 +1,8 @@
 import { GetServerSidePropsContext, GetServerSidePropsResult } from "next";
 import { useUserAgent } from "next-useragent";
 import { Stamp } from "types";
-import { ParsedUrlQuery } from "node:querystring";
 import { getStampByQuery } from "lib/stamp";
-import { stampList, defaultStamp } from "constants/stampList";
+import { stampList } from "constants/stampList";
 import Home from "components/templates/Home";
 
 type Props = {
