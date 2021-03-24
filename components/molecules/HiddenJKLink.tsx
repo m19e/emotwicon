@@ -8,7 +8,7 @@ const HiddenJKLink = () => {
         <span className="font-sans text-lg text-gray-100">
             {show ? (
                 <Link href="/jk">
-                    <a className="border-b border-gray-100">{"JKスタンプ"}</a>
+                    <a className="font-semibold border-b border-gray-100">{"JKスタンプ"}</a>
                 </Link>
             ) : (
                 <>
