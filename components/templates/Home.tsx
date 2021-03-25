@@ -26,7 +26,7 @@ const Home = ({ stamp, stamps, touchable }: Props) => (
         />
 
         <header className="flex items-center justify-center w-full h-24 mb-2 bg-twitter border-b">
-            <HiddenLinkTitle />
+            <HiddenLinkTitle href="/jk" />
         </header>
 
         <main className="flex flex-col items-center justify-center flex-1 text-center">
