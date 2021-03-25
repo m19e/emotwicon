@@ -9,15 +9,21 @@ const HiddenLinkTitle = ({ href }: Props) => {
 
     return (
         <div className="inline-flex font-sans font-black text-4xl text-white">
-            <span
-                className={"border-b border-white border-opacity-0 hover:border-opacity-100 " + (count > 0 ? "border-opacity-100" : "")}
-                onClick={() => setCount((prev) => ++prev)}
-            >
-                #
-            </span>
-            <span className={count > 1 ? "border-b border-white" : ""}>em</span>
-            <span className={count > 2 ? "border-b border-white" : ""}>otw</span>
-            <span className={count > 3 ? "border-b border-white" : ""}>icon</span>
+            {count > 4 ? (
+                <span className="border-b border-white">#emotwicon</span>
+            ) : (
+                <>
+                    <span
+                        className={"border-b border-white border-opacity-0 hover:border-opacity-100 " + (count > 0 ? "border-opacity-100" : "")}
+                        onClick={() => setCount((prev) => ++prev)}
+                    >
+                        #
+                    </span>
+                    <span className={count > 1 ? "border-b border-white" : ""}>em</span>
+                    <span className={count > 2 ? "border-b border-white" : ""}>otw</span>
+                    <span className={count > 3 ? "border-b border-white" : ""}>icon</span>
+                </>
+            )}
         </div>
     );
 };
