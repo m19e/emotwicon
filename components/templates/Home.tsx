@@ -1,5 +1,6 @@
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
+import HiddenLinkTitle from "components/molecules/HiddenLinkTitle";
 import StampList from "components/molecules/StampList";
 import HiddenLink from "components/molecules/HiddenJKLink";
 
@@ -25,7 +26,7 @@ const Home = ({ stamp, stamps, touchable }: Props) => (
         />
 
         <header className="flex items-center justify-center w-full h-24 mb-2 bg-twitter border-b">
-            <span className="font-sans font-black text-4xl text-gray-100">#emotwicon</span>
+            <HiddenLinkTitle href="/jk" />
         </header>
 
         <main className="flex flex-col items-center justify-center flex-1 text-center">
@@ -34,7 +35,15 @@ const Home = ({ stamp, stamps, touchable }: Props) => (
 
         <footer className="flex items-center justify-center w-full h-24 mt-2 bg-twitter border-t">
             <span className="font-sans text-lg text-gray-100">
-                <HiddenLink />
+                <span className="mr-1.5">by</span>
+                <a
+                    className="border-b border-opacity-0 border-gray-100 hover:border-opacity-100"
+                    href="https://github.com/m19e"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    m19e
+                </a>
             </span>
         </footer>
     </div>
