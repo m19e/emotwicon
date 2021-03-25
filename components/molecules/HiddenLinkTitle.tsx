@@ -17,7 +17,7 @@ const HiddenLinkTitle = ({ href }: Props) => {
             ) : (
                 <>
                     <span
-                        className={"border-b border-white border-opacity-0 hover:border-opacity-100 " + (count > 0 ? "border-opacity-100" : "")}
+                        className={"border-b border-white border-opacity-0 hover:border-opacity-100 cursor-pointer " + (count > 0 ? "border-opacity-100" : "")}
                         onClick={() => setCount((prev) => ++prev)}
                     >
                         #
