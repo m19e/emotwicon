@@ -12,7 +12,7 @@ const HiddenLinkTitle = ({ href }: Props) => {
         <div className="inline-flex font-sans font-black text-4xl text-white">
             {count > 4 ? (
                 <Link href={href}>
-                    <a className="border-b border-white">#emotwicon_JK</a>
+                    <a className="border-b border-white border-opacity-0 hover:border-opacity-100">#emotwicon_JK</a>
                 </Link>
             ) : (
                 <>
