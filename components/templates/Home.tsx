@@ -1,5 +1,6 @@
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
+import HiddenLinkTitle from "components/molecules/HiddenLinkTitle";
 import StampList from "components/molecules/StampList";
 import HiddenLink from "components/molecules/HiddenJKLink";
 
@@ -25,7 +26,7 @@ const Home = ({ stamp, stamps, touchable }: Props) => (
         />
 
         <header className="flex items-center justify-center w-full h-24 mb-2 bg-twitter border-b">
-            <span className="font-sans font-black text-4xl text-gray-100">#emotwicon</span>
+            <HiddenLinkTitle />
         </header>
 
         <main className="flex flex-col items-center justify-center flex-1 text-center">
