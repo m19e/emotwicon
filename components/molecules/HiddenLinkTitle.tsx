@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 type Props = {
@@ -10,7 +11,9 @@ const HiddenLinkTitle = ({ href }: Props) => {
     return (
         <div className="inline-flex font-sans font-black text-4xl text-white">
             {count > 4 ? (
-                <span className="border-b border-white">#emotwicon</span>
+                <Link href={href}>
+                    <a className="border-b border-white">#emotwicon_JK</a>
+                </Link>
             ) : (
                 <>
                     <span
