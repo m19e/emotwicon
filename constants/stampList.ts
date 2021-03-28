@@ -100,6 +100,13 @@ export const stampList: StampList = {
         fullpath: "hnn_complain.png",
         author: "wa_jwa_jpon2",
     },
+    cyk_gyudon: {
+        title: "わぁ！牛丼！",
+        name: "cyk_gyudon",
+        ext: "jpg",
+        fullpath: "cyk_gyudon.jpg",
+        author: "tukumo_ugo",
+    },
 };
 
 export const JKstampList: StampList = {
