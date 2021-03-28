@@ -131,6 +131,13 @@ export const JKstampList: StampList = {
         fullpath: "jk/ishima_sun_color.png",
         author: "",
     },
+    taoru_deny_color: {
+        title: "ちがうんですよ",
+        name: "taoru_deny_color",
+        ext: "png",
+        fullpath: "jk/taoru_deny_color.png",
+        author: "",
+    },
     me_flarechan_color: {
         title: "ふれあちゃん？",
         name: "me_flarechan_color",
