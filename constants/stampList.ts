@@ -117,6 +117,13 @@ export const JKstampList: StampList = {
         fullpath: "jk/me_straight_color.png",
         author: "",
     },
+    me_sleep_color: {
+        title: "寝な。",
+        name: "me_sleep_color",
+        ext: "png",
+        fullpath: "jk/me_sleep_color.png",
+        author: "",
+    },
     ishima_clean: {
         title: "部屋片付けて。",
         name: "ishima_clean",
@@ -159,18 +166,18 @@ export const JKstampList: StampList = {
         fullpath: "jk/me_flarechan.jpg",
         author: "",
     },
-    me_sleep: {
-        title: "寝な。",
-        name: "me_sleep",
-        ext: "jpg",
-        fullpath: "jk/me_sleep.jpg",
-        author: "",
-    },
     me_straight: {
         title: "ツッコまんからなっ",
         name: "me_straight",
         ext: "jpg",
         fullpath: "jk/me_straight.jpg",
+        author: "",
+    },
+    me_sleep: {
+        title: "寝な。",
+        name: "me_sleep",
+        ext: "jpg",
+        fullpath: "jk/me_sleep.jpg",
         author: "",
     },
 };
