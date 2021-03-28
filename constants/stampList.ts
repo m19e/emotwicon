@@ -103,6 +103,20 @@ export const stampList: StampList = {
 };
 
 export const JKstampList: StampList = {
+    me_flarechan_color: {
+        title: "ふれあちゃん？",
+        name: "me_flarechan_color",
+        ext: "png",
+        fullpath: "jk/me_flarechan_color.png",
+        author: "",
+    },
+    me_straight_color: {
+        title: "ツッコまんからなっ",
+        name: "me_straight_color",
+        ext: "png",
+        fullpath: "jk/me_straight_color.png",
+        author: "",
+    },
     ishima_clean: {
         title: "部屋片付けて。",
         name: "ishima_clean",
