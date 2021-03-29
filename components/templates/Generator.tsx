@@ -14,11 +14,11 @@ const Generator = () => (
             <div className="grid gap-1 p-2 rounded-lg border-2 border-gray-200">
                 <div className="inline-flex">
                     <span className="w-16 mx-2 text-right">author:</span>
-                    <input type="text" />
+                    <input className="w-60" type="text" />
                 </div>
                 <div className="inline-flex">
                     <span className="w-16 mx-2 text-right">fullpath:</span>
-                    <input type="text" />
+                    <input className="w-60" type="text" />
                 </div>
                 <textarea className="resize-none" cols={30} rows={10}></textarea>
             </div>
