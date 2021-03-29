@@ -107,6 +107,48 @@ export const stampList: StampList = {
         fullpath: "cyk_gyudon.jpg",
         author: "tukumo_ugo",
     },
+    chiihaya_default: {
+        title: "み",
+        name: "chiihaya_default",
+        ext: "PNG",
+        fullpath: "chiihaya_default.PNG",
+        author: "kanadechankawai",
+    },
+    chiihaya_nod: {
+        title: "み",
+        name: "chiihaya_nod",
+        ext: "PNG",
+        fullpath: "chiihaya_nod.PNG",
+        author: "kanadechankawai",
+    },
+    chiihaya_what: {
+        title: "み？",
+        name: "chiihaya_what",
+        ext: "PNG",
+        fullpath: "chiihaya_what.PNG",
+        author: "kanadechankawai",
+    },
+    chiihaya_fume: {
+        title: "み",
+        name: "chiihaya_fume",
+        ext: "PNG",
+        fullpath: "chiihaya_fume.PNG",
+        author: "kanadechankawai",
+    },
+    chiihaya_glitter: {
+        title: "み",
+        name: "chiihaya_glitter",
+        ext: "PNG",
+        fullpath: "chiihaya_glitter.PNG",
+        author: "kanadechankawai",
+    },
+    chiihaya_wow: {
+        title: "み",
+        name: "chiihaya_wow",
+        ext: "PNG",
+        fullpath: "chiihaya_wow.PNG",
+        author: "kanadechankawai",
+    },
 };
 
 export const JKstampList: StampList = {

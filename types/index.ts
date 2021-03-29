@@ -1,7 +1,7 @@
 export type Stamp = {
     title: string;
     name: string;
-    ext: "png" | "jpg";
+    ext: "png" | "PNG" | "jpg";
     fullpath: string;
     author: string;
 };
