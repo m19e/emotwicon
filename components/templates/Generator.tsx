@@ -47,17 +47,38 @@ const Generator = () => {
                 <div className="grid gap-1 p-2 rounded-lg border-2 border-gray-200">
                     <div className="inline-flex">
                         <span className="w-16 mx-2 text-right font-bold text-gray-600">title:</span>
-                        <input className="w-60" type="text" value={title} onChange={(e) => setTitle(e.currentTarget.value)} />
+                        <input
+                            className="w-60 px-1 outline-none focus:outline-none"
+                            type="text"
+                            value={title}
+                            onChange={(e) => setTitle(e.currentTarget.value)}
+                        />
                     </div>
                     <div className="inline-flex">
                         <span className="w-16 mx-2 text-right font-bold text-gray-600">author:</span>
-                        <input className="w-60" type="text" value={author} onChange={(e) => setAuthor(e.currentTarget.value)} />
+                        <input
+                            className="w-60 px-1 outline-none focus:outline-none"
+                            type="text"
+                            value={author}
+                            onChange={(e) => setAuthor(e.currentTarget.value)}
+                        />
                     </div>
                     <div className="inline-flex">
                         <span className="w-16 mx-2 text-right font-bold text-gray-600">fullpath:</span>
-                        <input className="w-60" type="text" value={fullpath} onChange={(e) => setFullpath(e.currentTarget.value)} />
+                        <input
+                            className="w-60 px-1 outline-none focus:outline-none"
+                            type="text"
+                            value={fullpath}
+                            onChange={(e) => setFullpath(e.currentTarget.value)}
+                        />
                     </div>
-                    <textarea value={JSON.stringify(stampData, null, 4)} className="resize-none" cols={30} rows={10} readOnly></textarea>
+                    <textarea
+                        value={JSON.stringify(stampData, null, 4)}
+                        className="resize-none outline-none focus:outline-none"
+                        cols={30}
+                        rows={10}
+                        readOnly
+                    ></textarea>
                 </div>
             </main>
 
