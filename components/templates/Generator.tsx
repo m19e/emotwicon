@@ -13,9 +13,9 @@ const Generator = () => {
     const [fullpath, setFullpath] = useState("emotwicon.png");
 
     useEffect(() => {
-        const format = formatStampData(author, fullpath);
+        const format = formatStampData(title, author, fullpath);
         setStampData(format);
-    }, [author, fullpath]);
+    }, [title, author, fullpath]);
 
     const formatStampData = (t: string, a: string, fp: string): StampData => {
         const result: StampData = {};
