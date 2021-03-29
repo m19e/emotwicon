@@ -29,7 +29,7 @@ const Generator = () => {
                         <span className="w-16 mx-2 text-right font-bold text-gray-600">fullpath:</span>
                         <input className="w-60" type="text" />
                     </div>
-                    <textarea value={JSON.stringify(stampData, null, 4)} className="resize-none" cols={30} rows={10}></textarea>
+                    <textarea value={JSON.stringify(stampData, null, 4)} className="resize-none" cols={30} rows={10} readOnly></textarea>
                 </div>
             </main>
 
