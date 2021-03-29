@@ -149,6 +149,13 @@ export const stampList: StampList = {
         fullpath: "chiihaya_wow.PNG",
         author: "kanadechankawai",
     },
+    jelkun_je: {
+        title: "じぇ～",
+        name: "jelkun_je",
+        ext: "jpg",
+        fullpath: "jelkun_je.jpg",
+        author: "FiV7KhbogVC",
+    },
 };
 
 export const JKstampList: StampList = {
