@@ -18,14 +18,16 @@ const Generator = () => {
 
     const formatStampData = (aut: string, fp: string): StampData => {
         if (/^jk\//.test(fullpath)) {
-            const [name, _] = fullpath.split("jk/").join("").split(".");
+            const [name, rawExt] = fullpath.split("jk/").join("").split(".");
+            const ext = rawExt === "png" || rawExt === "PNG" || rawExt === "jpg" ? rawExt : "png";
             const result: StampData = {};
-            result[name] = { title: "", ext: "png", name, author: aut, fullpath: fp };
+            result[name] = { title: "", name, ext, fullpath: fp, author: aut };
             return result;
         } else {
-            const [name, _] = fullpath.split(".");
+            const [name, rawExt] = fullpath.split(".");
+            const ext = rawExt === "png" || rawExt === "PNG" || rawExt === "jpg" ? rawExt : "png";
             const result: StampData = {};
-            result[name] = { title: "", ext: "png", name, author: aut, fullpath: fp };
+            result[name] = { title: "", name, ext, fullpath: fp, author: aut };
             return result;
         }
     };
