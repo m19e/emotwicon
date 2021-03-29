@@ -8,6 +8,8 @@ type StampData = {
 
 const Generator = () => {
     const [stampData, setStampData] = useState<StampData>({});
+    const [author, setAuthor] = useState("");
+    const [fullpath, setFullpath] = useState("example.png");
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
@@ -23,11 +25,11 @@ const Generator = () => {
                 <div className="grid gap-1 p-2 rounded-lg border-2 border-gray-200">
                     <div className="inline-flex">
                         <span className="w-16 mx-2 text-right font-bold text-gray-600">author:</span>
-                        <input className="w-60" type="text" />
+                        <input className="w-60" type="text" value={author} onChange={(e) => setAuthor(e.currentTarget.value)} />
                     </div>
                     <div className="inline-flex">
                         <span className="w-16 mx-2 text-right font-bold text-gray-600">fullpath:</span>
-                        <input className="w-60" type="text" />
+                        <input className="w-60" type="text" value={fullpath} onChange={(e) => setFullpath(e.currentTarget.value)} />
                     </div>
                     <textarea value={JSON.stringify(stampData, null, 4)} className="resize-none" cols={30} rows={10} readOnly></textarea>
                 </div>
