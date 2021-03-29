@@ -8,6 +8,7 @@ type StampData = {
 
 const Generator = () => {
     const [stampData, setStampData] = useState<StampData>({});
+    const [title, setTitle] = useState("タイトル");
     const [author, setAuthor] = useState("");
     const [fullpath, setFullpath] = useState("emotwicon.png");
 
@@ -44,6 +45,10 @@ const Generator = () => {
 
             <main className="flex flex-col items-center justify-center flex-1 text-center">
                 <div className="grid gap-1 p-2 rounded-lg border-2 border-gray-200">
+                    <div className="inline-flex">
+                        <span className="w-16 mx-2 text-right font-bold text-gray-600">title:</span>
+                        <input className="w-60" type="text" value={title} onChange={(e) => setTitle(e.currentTarget.value)} />
+                    </div>
                     <div className="inline-flex">
                         <span className="w-16 mx-2 text-right font-bold text-gray-600">author:</span>
                         <input className="w-60" type="text" value={author} onChange={(e) => setAuthor(e.currentTarget.value)} />
