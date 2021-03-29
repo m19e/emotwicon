@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Stamp } from "types";
 
 type StampData = {
@@ -9,7 +9,26 @@ type StampData = {
 const Generator = () => {
     const [stampData, setStampData] = useState<StampData>({});
     const [author, setAuthor] = useState("");
-    const [fullpath, setFullpath] = useState("example.png");
+    const [fullpath, setFullpath] = useState("emotwicon.png");
+
+    useEffect(() => {
+        const format = formatStampData(author, fullpath);
+        setStampData(format);
+    }, [author, fullpath]);
+
+    const formatStampData = (aut: string, fp: string): StampData => {
+        if (/^jk\//.test(fullpath)) {
+            const [name, _] = fullpath.split("jk/").join("").split(".");
+            const result: StampData = {};
+            result[name] = { title: "", ext: "png", name, author: aut, fullpath: fp };
+            return result;
+        } else {
+            const [name, _] = fullpath.split(".");
+            const result: StampData = {};
+            result[name] = { title: "", ext: "png", name, author: aut, fullpath: fp };
+            return result;
+        }
+    };
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
