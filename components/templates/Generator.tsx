@@ -13,11 +13,11 @@ const Generator = () => (
         <main className="flex flex-col items-center justify-center flex-1 text-center">
             <div className="grid gap-1 p-2 rounded-lg border-2 border-gray-200">
                 <div className="inline-flex">
-                    <span className="w-16 mx-2 text-right">author:</span>
+                    <span className="w-16 mx-2 text-right font-bold text-gray-600">author:</span>
                     <input className="w-60" type="text" />
                 </div>
                 <div className="inline-flex">
-                    <span className="w-16 mx-2 text-right">fullpath:</span>
+                    <span className="w-16 mx-2 text-right font-bold text-gray-600">fullpath:</span>
                     <input className="w-60" type="text" />
                 </div>
                 <textarea className="resize-none" cols={30} rows={10}></textarea>
