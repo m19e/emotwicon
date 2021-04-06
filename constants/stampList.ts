@@ -9,6 +9,27 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    asahi_gotit: {
+        title: "わかったっす",
+        name: "asahi_gotit",
+        ext: "png",
+        fullpath: "asahi_gotit.png",
+        author: "NPspencerHG",
+    },
+    koito_pyaa: {
+        title: "ぴゃ～",
+        name: "koito_pyaa",
+        ext: "png",
+        fullpath: "koito_pyaa.png",
+        author: "NPspencerHG",
+    },
+    nichika_peka: {
+        title: "ぺかー。",
+        name: "nichika_peka",
+        ext: "png",
+        fullpath: "nichika_peka.png",
+        author: "NPspencerHG",
+    },
     askr_nice: {
         title: "いいね",
         name: "askr_nice",

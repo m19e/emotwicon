@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Stamp } from "types";
 
 type StampData = {
-    [key: string]: Stamp;
+    [stampkey: string]: Stamp;
 };
 
 const Generator = () => {
