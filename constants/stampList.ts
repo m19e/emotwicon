@@ -9,6 +9,20 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    rinze_foul: {
+        title: "反則でございます。",
+        name: "rinze_foul",
+        ext: "png",
+        fullpath: "rinze_foul.png",
+        author: "murisuu_yaha",
+    },
+    chiyoko_arrest: {
+        title: "たいほ！",
+        name: "chiyoko_arrest",
+        ext: "png",
+        fullpath: "chiyoko_arrest.png",
+        author: "murisuu_yaha",
+    },
     koito_yeah: {
         title: "YEAH!",
         name: "koito_yeah",
