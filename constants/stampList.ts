@@ -212,6 +212,13 @@ export const stampList: StampList = {
         fullpath: "jelkun_je.jpg",
         author: "FiV7KhbogVC",
     },
+    wani_goodnight: {
+        title: "Good Night",
+        name: "wani_goodnight",
+        ext: "png",
+        fullpath: "wani_goodnight.png",
+        author: "ulzoll",
+    },
 };
 
 export const JKstampList: StampList = {
