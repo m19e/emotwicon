@@ -9,6 +9,13 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    kaho_sugoi: {
+        title: "スゴいです！",
+        name: "kaho_sugoi",
+        ext: "png",
+        fullpath: "kaho_sugoi.png",
+        author: "o0w0l",
+    },
     chiyoko_gyoi: {
         title: "御意",
         name: "chiyoko_gyoi",
