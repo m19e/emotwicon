@@ -177,6 +177,13 @@ export const stampList: StampList = {
         fullpath: "cyk_gyudon.jpg",
         author: "tukumo_ugo",
     },
+    rin_fuun: {
+        title: "ふーん",
+        name: "rin_fuun",
+        ext: "png",
+        fullpath: "rin_fuun.png",
+        author: "FiV7KhbogVC",
+    },
     chiihaya_default: {
         title: "み",
         name: "chiihaya_default",
