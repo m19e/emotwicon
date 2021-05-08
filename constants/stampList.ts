@@ -9,12 +9,12 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
-    amtn_sweet: {
-        title: "やった～!!",
-        name: "amtn_sweet",
+    natsuha_bravo: {
+        title: "ブラボーよ！",
+        name: "natsuha_bravo",
         ext: "png",
-        fullpath: "amtn_sweet.png",
-        author: "yamato_cogane",
+        fullpath: "natsuha_bravo.png",
+        author: "o0w0l",
     },
     kaho_sugoi: {
         title: "スゴいです！",
@@ -36,20 +36,6 @@ export const stampList: StampList = {
         ext: "png",
         fullpath: "rinze_narimasita.png",
         author: "o0w0l",
-    },
-    rinze_foul: {
-        title: "反則でございます。",
-        name: "rinze_foul",
-        ext: "png",
-        fullpath: "rinze_foul.png",
-        author: "murisuu_yaha",
-    },
-    chiyoko_arrest: {
-        title: "たいほ！",
-        name: "chiyoko_arrest",
-        ext: "png",
-        fullpath: "chiyoko_arrest.png",
-        author: "murisuu_yaha",
     },
     koito_yeah: {
         title: "YEAH!",
@@ -78,6 +64,27 @@ export const stampList: StampList = {
         ext: "png",
         fullpath: "nichika_peka.png",
         author: "NPspencerHG",
+    },
+    amtn_sweet: {
+        title: "やった～!!",
+        name: "amtn_sweet",
+        ext: "png",
+        fullpath: "amtn_sweet.png",
+        author: "yamato_cogane",
+    },
+    rinze_foul: {
+        title: "反則でございます。",
+        name: "rinze_foul",
+        ext: "png",
+        fullpath: "rinze_foul.png",
+        author: "murisuu_yaha",
+    },
+    chiyoko_arrest: {
+        title: "たいほ！",
+        name: "chiyoko_arrest",
+        ext: "png",
+        fullpath: "chiyoko_arrest.png",
+        author: "murisuu_yaha",
     },
     askr_nice: {
         title: "いいね",
