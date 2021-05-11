@@ -17,7 +17,7 @@ export const stampList: StampList = {
         author: "noe_aoikaba",
     },
     kiriko_dayoff: {
-        title: "今日はもうお休みにしたほうがいいと思うんです…!!",
+        title: "お休みにしたほうがいいと思うんです…!!",
         name: "kiriko_dayoff",
         ext: "PNG",
         fullpath: "kiriko_dayoff.PNG",
