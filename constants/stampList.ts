@@ -9,6 +9,20 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    yuika_onaroll: {
+        title: "ただいま絶好調で～す!!",
+        name: "yuika_onaroll",
+        ext: "PNG",
+        fullpath: "yuika_onaroll.PNG",
+        author: "noe_aoikaba",
+    },
+    kiriko_dayoff: {
+        title: "今日はもうお休みにしたほうがいいと思うんです…!!",
+        name: "kiriko_dayoff",
+        ext: "PNG",
+        fullpath: "kiriko_dayoff.PNG",
+        author: "noe_aoikaba",
+    },
     natsuha_bravo: {
         title: "ブラボーよ！",
         name: "natsuha_bravo",
