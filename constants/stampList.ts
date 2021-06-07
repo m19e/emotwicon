@@ -271,6 +271,13 @@ export const JKstampList: StampList = {
         fullpath: "jk/flare_ew.png",
         author: "Flame_tsukushi4",
     },
+    yomotsu_mmm: {
+        title: "ムーー",
+        name: "yomotsu_mmm",
+        ext: "png",
+        fullpath: "jk/yomotsu_mmm.png",
+        author: "ameno_tokotachi",
+    },
     ishima_clean_color: {
         title: "部屋片付けて。",
         name: "ishima_clean_color",
