@@ -18,7 +18,7 @@ const MetaHeader = ({ title, description, ogTitle, ogDescription, ogImage, twTit
         <title>{title}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content={description} />
-        <meta property="og:site_name" content="twista" />
+        <meta property="og:site_name" content="#emotwicon" />
         <meta property="og:title" content={ogTitle} />
         <meta property="og:description" content={ogDescription} />
         <meta property="og:image" content={ogImage} />
