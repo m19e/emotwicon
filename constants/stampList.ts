@@ -264,19 +264,12 @@ export const stampList: StampList = {
 };
 
 export const JKstampList: StampList = {
-    flare_blush: {
-        title: "あわわわわわわわわ",
-        name: "flare_blush",
+    yomotsu_morning: {
+        title: "おはよう！",
+        name: "yomotsu_morning",
         ext: "png",
-        fullpath: "jk/flare_blush.png",
-        author: "Flame_tsukushi4",
-    },
-    flare_ew: {
-        title: "う゛……",
-        name: "flare_ew",
-        ext: "png",
-        fullpath: "jk/flare_ew.png",
-        author: "Flame_tsukushi4",
+        fullpath: "jk/yomotsu_morning.png",
+        author: "ameno_tokotachi",
     },
     yomotsu_whistle: {
         title: "ピピ～ッ！",
@@ -291,6 +284,20 @@ export const JKstampList: StampList = {
         ext: "png",
         fullpath: "jk/yomotsu_mmm.png",
         author: "ameno_tokotachi",
+    },
+    flare_blush: {
+        title: "あわわわわわわわわ",
+        name: "flare_blush",
+        ext: "png",
+        fullpath: "jk/flare_blush.png",
+        author: "Flame_tsukushi4",
+    },
+    flare_ew: {
+        title: "う゛……",
+        name: "flare_ew",
+        ext: "png",
+        fullpath: "jk/flare_ew.png",
+        author: "Flame_tsukushi4",
     },
     ishima_clean_color: {
         title: "部屋片付けて。",
