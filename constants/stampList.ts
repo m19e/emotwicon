@@ -264,6 +264,13 @@ export const stampList: StampList = {
 };
 
 export const JKstampList: StampList = {
+    flare_blush: {
+        title: "あわわわわわわわわ",
+        name: "flare_blush",
+        ext: "png",
+        fullpath: "jk/flare_blush.png",
+        author: "Flame_tsukushi4",
+    },
     flare_ew: {
         title: "う゛……",
         name: "flare_ew",
