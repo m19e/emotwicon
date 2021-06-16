@@ -264,6 +264,13 @@ export const stampList: StampList = {
 };
 
 export const JKstampList: StampList = {
+    yomotsu_night: {
+        title: "おやすみ！",
+        name: "yomotsu_night",
+        ext: "png",
+        fullpath: "jk/yomotsu_night.png",
+        author: "ameno_tokotachi",
+    },
     yomotsu_morning: {
         title: "おはよう！",
         name: "yomotsu_morning",
