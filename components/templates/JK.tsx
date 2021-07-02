@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
 import StampListContainer from "components/organisms/StampListContainer";
-import StampList from "components/molecules/JKstampList";
 
 type Props = {
     stamp: Stamp;
