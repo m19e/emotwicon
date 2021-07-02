@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
+import StampListContainer from "components/organisms/StampListContainer";
 import StampList from "components/molecules/JKstampList";
 
 type Props = {
@@ -32,9 +33,7 @@ const JK = ({ stamp, stamps, touchable }: Props) => (
             </Link>
         </header>
 
-        <main className="flex flex-col items-center justify-center flex-1 text-center">
-            <StampList stamps={stamps} touchable={touchable} />
-        </main>
+        <StampListContainer stamps={stamps} touchable={touchable} />
 
         <footer className="flex items-center justify-center w-full h-24 mt-2 bg-twitter border-t">
             <span className="font-sans text-lg text-gray-100">
