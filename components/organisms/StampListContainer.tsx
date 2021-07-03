@@ -25,6 +25,11 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
         return data;
     };
 
+    const setFavIdsStorage = (key: string, ids: string[]) => {
+        const data = JSON.stringify(ids);
+        localStorage.setItem(key, data);
+    };
+
     const toggleStampFav = (s: Stamp) => {
         setFavIds((prev) => (s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name]));
     };
