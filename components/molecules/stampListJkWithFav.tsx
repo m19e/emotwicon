@@ -13,13 +13,13 @@ const StampList = ({ stamps, touchable, toggle }: Props) => (
         {touchable ? (
             <>
                 {stamps.map((s, i) => (
-                    <MobileJkWithFav key={i} stamp={s} />
+                    <MobileJkWithFav key={i} stamp={s} toggle={toggle} />
                 ))}
             </>
         ) : (
             <>
                 {stamps.map((s, i) => (
-                    <DefaultJkWithFav key={i} stamp={s} />
+                    <DefaultJkWithFav key={i} stamp={s} toggle={toggle} />
                 ))}
             </>
         )}
