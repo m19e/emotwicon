@@ -4,6 +4,7 @@ import CopyButton from "components/molecules/CopyButton";
 
 type Props = {
     stamp: Stamp;
+    toggle?: (s: Stamp) => void;
 };
 
 const Default = ({ stamp }: Props) => (
