@@ -31,7 +31,11 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
     };
 
     const toggleStampFav = (s: Stamp) => {
-        setFavIds((prev) => (s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name]));
+        setFavIds((prev) => {
+            const newIds = s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name];
+            setFavIdsStorage("emotwicon/fav/jk", newIds);
+            return newIds;
+        });
     };
 
     return (
