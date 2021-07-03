@@ -21,10 +21,7 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
     }, []);
 
     const toggleStampFav = (s: Stamp) => {
-        setFavIds((prev) => {
-            const filtered = prev.filter((id) => id !== s.name);
-            return filtered;
-        });
+        setFavIds((prev) => (s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name]));
     };
 
     return (
