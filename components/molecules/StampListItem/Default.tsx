@@ -65,7 +65,7 @@ export const DefaultJK = ({ stamp }: Props) => (
     </div>
 );
 
-export const DefaultJkWithFav = ({ stamp }: Props) => (
+export const DefaultJkWithFav = ({ stamp, toggle }: Props) => (
     <div className="w-44 h-44 max-w-full flex-center rounded-2xl bg-white border-2 border-gray-200">
         <div className="relative group">
             <div className="flex-center transition-opacity group-hover:opacity-25">
@@ -73,6 +73,7 @@ export const DefaultJkWithFav = ({ stamp }: Props) => (
             </div>
             <div className="absolute inset-0 z-10 flex-center flex-col bg-transparent transition-opacity opacity-0 group-hover:opacity-100">
                 <div className="h-1/2 w-full flex flex-col justify-end">
+                    <button onClick={() => toggle(stamp)}>{stamp.fav ? "*" : "x"}</button>
                     <a
                         className="py-1.5 mb-1 rounded-md shadow text-white text-sm font-bold font-sans bg-twitter"
                         href={
