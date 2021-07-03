@@ -13,12 +13,17 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            const res = localStorage.getItem("emotwicon/fav/jk");
-            const data: string[] = res === null ? [] : JSON.parse(res);
-            console.log(res, data);
+            const data = getFavIds("emotwicon/fav/jk");
+            console.log(data);
             setFavIds(data);
         }
     }, []);
+
+    const getFavIds = (key: string): string[] => {
+        const res = localStorage.getItem(key);
+        const data: string[] = res === null ? [] : JSON.parse(res);
+        return data;
+    };
 
     const toggleStampFav = (s: Stamp) => {
         setFavIds((prev) => (s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name]));
