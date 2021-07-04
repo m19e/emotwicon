@@ -9,4 +9,8 @@
     background-color: #1da1f2;
 }
 
+button {
+    @apply select-none focus:outline-none;
+}
+
 @tailwind utilities;
