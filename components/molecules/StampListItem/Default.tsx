@@ -85,7 +85,7 @@ export const DefaultJkWithFav = ({ stamp, toggle }: Props) => (
                         ツイートする
                     </a>
                 </div>
-                <div className="h-1/2 w-full flex flex-col justify-start">
+                <div className="h-1/2 w-full flex flex-col justify-between">
                     <CopyButton text={"#emotwicon " + process.env.NEXT_PUBLIC_SITE_ROOT_URL + "/jk?stamp=" + stamp.name} />
                     {/* <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span> */}
                     <button className="bg-white" onClick={() => toggle(stamp)}>
