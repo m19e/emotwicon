@@ -14,7 +14,6 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
     useEffect(() => {
         if (typeof window !== "undefined") {
             const data = getFavIds("emotwicon/fav/jk");
-            console.log(data);
             setFavIds(data);
         }
     }, []);
