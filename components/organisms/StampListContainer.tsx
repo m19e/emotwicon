@@ -5,9 +5,10 @@ import StampList from "components/molecules/stampListJkWithFav";
 type Props = {
     stamps: Stamp[];
     touchable: boolean;
+    page: "default" | "jk";
 };
 
-const StampListContainer = ({ stamps, touchable }: Props) => {
+const StampListContainer = ({ stamps, touchable, page }: Props) => {
     const [rootStamps, setRootStamps] = useState<Stamp[]>([]);
     const [favStamps, setFavStamps] = useState<Stamp[]>([]);
 
