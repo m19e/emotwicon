@@ -4,6 +4,7 @@ export type Stamp = {
     ext: "png" | "PNG" | "jpg";
     fullpath: string;
     author: string;
+    fav?: boolean;
 };
 
 export type StampList = {
