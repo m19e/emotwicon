@@ -1,7 +1,6 @@
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
 import HiddenLinkTitle from "components/molecules/HiddenLinkTitle";
-import StampList from "components/molecules/StampList";
 import StampListContainer from "components/organisms/StampListContainer";
 
 type Props = {
