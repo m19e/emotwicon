@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Stamp } from "types";
-import StampList from "components/molecules/StampListWithFav";
-import StampListJK from "components/molecules/StampListJkWithFav";
+import StampList from "components/molecules/StampList";
+import StampListJK from "components/molecules/StampListJK";
 
 type Props = {
     stamps: Stamp[];
