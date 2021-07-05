@@ -69,7 +69,7 @@ export const DefaultJkWithFav = ({ stamp, toggle }: Props) => {
     return (
         <div className="w-44 h-44 max-w-full flex-center rounded-2xl bg-white border-2 border-gray-200">
             <div className="relative group">
-                <div className="flex-center transition-opacity group-hover:opacity-25">
+                <div className="flex-center transition-opacity group-hover:opacity-10">
                     <Img src={`/stamps/${stamp.fullpath}`} alt={stamp.name} width={144} height={144} />
                 </div>
                 <div className="absolute inset-0 z-10 flex-center flex-col bg-transparent transition-opacity opacity-0 group-hover:opacity-100">
