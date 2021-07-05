@@ -52,7 +52,7 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
     };
 
     return (
-        <main className="flex flex-col items-center justify-center flex-1 text-center">
+        <main className="flex flex-col items-center flex-1 text-center">
             <button onClick={() => setFavMode((prev) => !prev)}>お気に入り:{favMode ? "有効" : "無効"}</button>
             {favMode ? (
                 <StampList stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
