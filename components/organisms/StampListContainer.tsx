@@ -19,7 +19,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            const data = getFavIds("emotwicon/fav/jk");
+            const data = getFavIds(`emotwicon/fav/${page}`);
             setFavIds(data);
             setLoaded(true);
         }
@@ -47,7 +47,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
     const toggleStampFav = (s: Stamp) => {
         setFavIds((prev) => {
             const newIds = s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name];
-            setFavIdsStorage("emotwicon/fav/jk", newIds);
+            setFavIdsStorage(`emotwicon/fav/${page}`, newIds);
             return newIds;
         });
     };
