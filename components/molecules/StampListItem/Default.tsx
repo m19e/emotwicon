@@ -92,9 +92,9 @@ export const DefaultJkWithFav = ({ stamp, toggle }: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="absolute z-20 bottom-0 right-0 inline-flex justify-end">
+            <div className="absolute z-20 -bottom-2 -right-2 inline-flex justify-end">
                 <button
-                    className={"rounded-lg p-0.5 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
+                    className={"rounded-full p-1 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
                     onClick={() => toggle(stamp)}
                 >
                     <svg
