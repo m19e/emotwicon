@@ -90,11 +90,15 @@ export const DefaultJkWithFav = ({ stamp, toggle }: Props) => {
                         <CopyButton text={"#emotwicon " + process.env.NEXT_PUBLIC_SITE_ROOT_URL + "/jk?stamp=" + stamp.name} />
                         {/* <span className="text-xs text-gray-700 font-bold">by @{stamp.author}</span> */}
                         <div className="inline-flex justify-end">
-                            <button onClick={() => toggle(stamp)}>
+                            <button
+                                className={"rounded-lg p-0.5 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
+                                onClick={() => toggle(stamp)}
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
-                                    className={"h-6 w-6 stroke-current fill-current " + (stamp.fav ? "text-yellow-300" : "text-gray-300")}
+                                    className={"h-6 w-6 stroke-current " + (stamp.fav ? "fill-current text-yellow-300" : "text-gray-400")}
                                     viewBox="0 0 24 24"
+                                    fill="none"
                                 >
                                     <path
                                         strokeLinecap="round"
