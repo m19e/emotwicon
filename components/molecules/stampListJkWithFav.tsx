@@ -9,7 +9,7 @@ type Props = {
 };
 
 const StampList = ({ stamps, touchable, toggle }: Props) => (
-    <div className="w-11/12 grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+    <div className="w-11/12 grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {stamps.length === 0 ? (
             <div className="w-44 h-44 max-w-full flex-center rounded-2xl bg-white border-2 border-gray-200">
                 <span className="text-gray-400 font-bold font-sans">スタンプ未登録</span>
