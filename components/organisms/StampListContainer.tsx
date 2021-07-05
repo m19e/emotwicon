@@ -55,15 +55,15 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
         <main className="flex flex-col items-center flex-1 text-center">
             <div className="w-11/12 mb-2 inline-flex justify-end items-center">
                 <button className="relative cursor-pointer" onClick={() => setFavMode((prev) => !prev)}>
-                    <span className={"block w-10 h-6 bg-gray-200 rounded-full shadow-inner transition-colors " + (favMode ? "bg-yellow-300" : "")}></span>
+                    <span className={"block w-14 h-8 bg-gray-200 rounded-full shadow-inner transition-colors " + (favMode ? "bg-yellow-300" : "")}></span>
                     <span
                         className={
-                            "absolute block w-4 h-4 mt-1 ml-1 bg-white rounded-full shadow inset-y-0 left-0 focus-within:shadow-outline transition-transform duration-300 ease-in-out " +
+                            "absolute block w-6 h-6 mt-1 ml-1 bg-white rounded-full shadow inset-y-0 left-0 focus-within:shadow-outline transition-transform duration-300 ease-in-out " +
                             (favMode ? "transform translate-x-full" : "")
                         }
                     ></span>
                 </button>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1 stroke-current fill-current text-yellow-300" viewBox="0 0 24 24" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 stroke-current fill-current text-yellow-300" viewBox="0 0 24 24" fill="none">
                     <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
