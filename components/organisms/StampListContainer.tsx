@@ -63,7 +63,7 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
                         }
                     ></span>
                 </button>
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1 stroke-current fill-current text-yellow-300" viewBox="0 0 24 24" fill="none">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 ml-1.5 stroke-current fill-current text-yellow-300" viewBox="0 0 24 24" fill="none">
                     <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
