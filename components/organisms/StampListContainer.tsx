@@ -53,7 +53,6 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
 
     return (
         <main className="flex flex-col items-center flex-1 text-center">
-            {/* <button onClick={() => setFavMode((prev) => !prev)}>お気に入り:{favMode ? "有効" : "無効"}</button> */}
             <div className="w-11/12 mb-2 inline-flex justify-end items-center">
                 <button className="relative cursor-pointer" onClick={() => setFavMode((prev) => !prev)}>
                     <span className={"block w-10 h-6 bg-gray-200 rounded-full shadow-inner transition-colors" + (favMode ? " bg-yellow-300" : "")}></span>
