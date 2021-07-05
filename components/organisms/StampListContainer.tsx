@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Stamp } from "types";
+import StampList from "components/molecules/StampListWithFav";
 import StampListJK from "components/molecules/StampListJkWithFav";
 
 type Props = {
@@ -73,10 +74,23 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
                     />
                 </svg>
             </div>
-            {favMode ? (
-                <StampListJK stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
-            ) : (
-                <StampListJK stamps={rootStamps} touchable={touchable} toggle={toggleStampFav} />
+            {page === "default" && (
+                <>
+                    {favMode ? (
+                        <StampList stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
+                    ) : (
+                        <StampList stamps={rootStamps} touchable={touchable} toggle={toggleStampFav} />
+                    )}
+                </>
+            )}
+            {page === "jk" && (
+                <>
+                    {favMode ? (
+                        <StampListJK stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
+                    ) : (
+                        <StampListJK stamps={rootStamps} touchable={touchable} toggle={toggleStampFav} />
+                    )}
+                </>
             )}
         </main>
     );
