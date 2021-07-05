@@ -74,24 +74,8 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
                     />
                 </svg>
             </div>
-            {page === "default" && (
-                <>
-                    {favMode ? (
-                        <StampList stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
-                    ) : (
-                        <StampList stamps={rootStamps} touchable={touchable} toggle={toggleStampFav} />
-                    )}
-                </>
-            )}
-            {page === "jk" && (
-                <>
-                    {favMode ? (
-                        <StampListJK stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
-                    ) : (
-                        <StampListJK stamps={rootStamps} touchable={touchable} toggle={toggleStampFav} />
-                    )}
-                </>
-            )}
+            {page === "default" && <StampList stamps={favMode ? favStamps : rootStamps} touchable={touchable} toggle={toggleStampFav} />}
+            {page === "jk" && <StampListJK stamps={favMode ? favStamps : rootStamps} touchable={touchable} toggle={toggleStampFav} />}
         </main>
     );
 };
