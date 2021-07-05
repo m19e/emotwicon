@@ -1,7 +1,7 @@
 import { Stamp } from "types";
 import MetaHeader from "foundations/MetaHeader";
 import HiddenLinkTitle from "components/molecules/HiddenLinkTitle";
-import StampList from "components/molecules/StampList";
+import StampListContainer from "components/organisms/StampListContainer";
 
 type Props = {
     stamp: Stamp;
@@ -28,9 +28,7 @@ const Home = ({ stamp, stamps, touchable }: Props) => (
             <HiddenLinkTitle href="/jk" />
         </header>
 
-        <main className="flex flex-col items-center justify-center flex-1 text-center">
-            <StampList stamps={stamps} touchable={touchable} />
-        </main>
+        <StampListContainer stamps={stamps} touchable={touchable} page="default" />
 
         <footer className="flex items-center justify-center w-full h-24 mt-2 bg-twitter border-t">
             <span className="font-sans text-lg text-gray-100">

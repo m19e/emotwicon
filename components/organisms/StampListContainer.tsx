@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { Stamp } from "types";
-import StampList from "components/molecules/stampListJkWithFav";
+import StampList from "components/molecules/StampList";
+import StampListJK from "components/molecules/StampListJK";
 
 type Props = {
     stamps: Stamp[];
     touchable: boolean;
+    page: "default" | "jk";
 };
 
-const StampListContainer = ({ stamps, touchable }: Props) => {
+const StampListContainer = ({ stamps, touchable, page }: Props) => {
     const [rootStamps, setRootStamps] = useState<Stamp[]>([]);
     const [favStamps, setFavStamps] = useState<Stamp[]>([]);
 
@@ -18,7 +20,7 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            const data = getFavIds("emotwicon/fav/jk");
+            const data = getFavIds(`emotwicon/fav/${page}`);
             setFavIds(data);
             setLoaded(true);
         }
@@ -46,7 +48,7 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
     const toggleStampFav = (s: Stamp) => {
         setFavIds((prev) => {
             const newIds = s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name];
-            setFavIdsStorage("emotwicon/fav/jk", newIds);
+            setFavIdsStorage(`emotwicon/fav/${page}`, newIds);
             return newIds;
         });
     };
@@ -72,11 +74,8 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
                     />
                 </svg>
             </div>
-            {favMode ? (
-                <StampList stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
-            ) : (
-                <StampList stamps={rootStamps} touchable={touchable} toggle={toggleStampFav} />
-            )}
+            {page === "default" && <StampList stamps={favMode ? favStamps : rootStamps} touchable={touchable} toggle={toggleStampFav} />}
+            {page === "jk" && <StampListJK stamps={favMode ? favStamps : rootStamps} touchable={touchable} toggle={toggleStampFav} />}
         </main>
     );
 };

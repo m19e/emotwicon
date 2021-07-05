@@ -1,6 +1,6 @@
 import { Stamp } from "types";
-import { DefaultJkWithFav } from "components/molecules/StampListItem/Default";
-import { MobileJkWithFav } from "components/molecules/StampListItem/Mobile";
+import { DefaultJK } from "components/molecules/StampListItem/Default";
+import { MobileJK } from "components/molecules/StampListItem/Mobile";
 
 type Props = {
     stamps: Stamp[];
@@ -10,21 +10,21 @@ type Props = {
 
 const StampList = ({ stamps, touchable, toggle }: Props) => (
     <div className="w-11/12 mb-2 grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
-        {stamps.length === 0 ? (
+        {stamps.length === 0 && (
             <div className="w-44 h-44 max-w-full flex-center rounded-2xl bg-white border-2 border-gray-200">
                 <span className="text-gray-400 font-bold font-sans">スタンプ未登録</span>
             </div>
-        ) : null}
+        )}
         {touchable ? (
             <>
                 {stamps.map((s, i) => (
-                    <MobileJkWithFav key={i} stamp={s} toggle={toggle} />
+                    <MobileJK key={i} stamp={s} toggle={toggle} />
                 ))}
             </>
         ) : (
             <>
                 {stamps.map((s, i) => (
-                    <DefaultJkWithFav key={i} stamp={s} toggle={toggle} />
+                    <DefaultJK key={i} stamp={s} toggle={toggle} />
                 ))}
             </>
         )}
