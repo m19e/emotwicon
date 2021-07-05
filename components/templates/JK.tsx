@@ -32,7 +32,7 @@ const JK = ({ stamp, stamps, touchable }: Props) => (
             </Link>
         </header>
 
-        <StampListContainer stamps={stamps} touchable={touchable} />
+        <StampListContainer stamps={stamps} touchable={touchable} page="jk" />
 
         <footer className="flex items-center justify-center w-full h-24 mt-2 bg-twitter border-t">
             <span className="font-sans text-lg text-gray-100">
