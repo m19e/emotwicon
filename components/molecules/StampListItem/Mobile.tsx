@@ -63,7 +63,7 @@ const Mobile = ({ stamp, toggle }: Props) => {
     );
 };
 
-export const MobileJkWithFav = ({ stamp, toggle }: Props) => {
+export const MobileJK = ({ stamp, toggle }: Props) => {
     const [active, setActive] = useState(false);
 
     return (

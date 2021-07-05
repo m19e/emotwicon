@@ -56,7 +56,7 @@ const Default = ({ stamp, toggle }: Props) => (
     </div>
 );
 
-export const DefaultJkWithFav = ({ stamp, toggle }: Props) => {
+export const DefaultJK = ({ stamp, toggle }: Props) => {
     return (
         <div className="w-44 h-44 max-w-full flex-center relative rounded-2xl bg-white border-2 border-gray-200">
             <div className="relative group">
