@@ -57,7 +57,7 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
             {favMode ? (
                 <StampList stamps={favStamps} touchable={touchable} toggle={toggleStampFav} />
             ) : (
-                <StampList stamps={loaded ? rootStamps : stamps} touchable={touchable} toggle={toggleStampFav} />
+                <StampList stamps={rootStamps} touchable={touchable} toggle={toggleStampFav} />
             )}
         </main>
     );
