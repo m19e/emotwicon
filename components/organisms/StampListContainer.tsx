@@ -55,11 +55,11 @@ const StampListContainer = ({ stamps, touchable }: Props) => {
         <main className="flex flex-col items-center flex-1 text-center">
             <div className="w-11/12 mb-2 inline-flex justify-end items-center">
                 <button className="relative cursor-pointer" onClick={() => setFavMode((prev) => !prev)}>
-                    <span className={"block w-10 h-6 bg-gray-200 rounded-full shadow-inner transition-colors" + (favMode ? " bg-yellow-300" : "")}></span>
+                    <span className={"block w-10 h-6 bg-gray-200 rounded-full shadow-inner transition-colors " + (favMode ? "bg-yellow-300" : "")}></span>
                     <span
                         className={
-                            "absolute block w-4 h-4 mt-1 ml-1 bg-white rounded-full shadow inset-y-0 left-0 focus-within:shadow-outline transition-transform duration-300 ease-in-out" +
-                            (favMode ? " transform translate-x-full" : "")
+                            "absolute block w-4 h-4 mt-1 ml-1 bg-white rounded-full shadow inset-y-0 left-0 focus-within:shadow-outline transition-transform duration-300 ease-in-out " +
+                            (favMode ? "transform translate-x-full" : "")
                         }
                     ></span>
                 </button>
