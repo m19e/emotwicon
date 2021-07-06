@@ -9,11 +9,11 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
-    madoka_moring: {
+    madoka_morning: {
         title: "おはようございます",
-        name: "madoka_moring",
+        name: "madoka_morning",
         ext: "jpg",
-        fullpath: "madoka_moring.jpg",
+        fullpath: "madoka_morning.jpg",
         author: "cy__ms",
     },
     fuyuko_what: {
