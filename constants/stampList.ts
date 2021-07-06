@@ -9,6 +9,13 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    fuyuko_what: {
+        title: "何！？",
+        name: "fuyuko_what",
+        ext: "jpg",
+        fullpath: "fuyuko_what.jpg",
+        author: "NPspencerHG",
+    },
     yuika_onaroll: {
         title: "ただいま絶好調で～す!!",
         name: "yuika_onaroll",
