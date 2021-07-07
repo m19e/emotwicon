@@ -9,6 +9,13 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    nekomine_night: {
+        title: "オヤスミネ",
+        name: "nekomine_night",
+        ext: "jpg",
+        fullpath: "nekomine_night.jpg",
+        author: "Tight_Shiva",
+    },
     thinking_koito: {
         title: "thinking_koito",
         name: "thinking_koito",
@@ -285,6 +292,13 @@ export const stampList: StampList = {
 };
 
 export const JKstampList: StampList = {
+    yomotsu_near: {
+        title: "!!!",
+        name: "yomotsu_near",
+        ext: "png",
+        fullpath: "jk/yomotsu_near.png",
+        author: "ameno_tokotachi",
+    },
     yomotsu_night: {
         title: "おやすみ！",
         name: "yomotsu_night",
