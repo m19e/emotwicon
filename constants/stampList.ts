@@ -9,6 +9,13 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    mano_howa: {
+        title: "ほわ～っ♡",
+        name: "mano_howa",
+        ext: "png",
+        fullpath: "mano_howa.png",
+        author: "DELU_shinybald",
+    },
     nichika_muki: {
         title: "ムッキムキなので！",
         name: "nichika_muki",
@@ -50,6 +57,13 @@ export const stampList: StampList = {
         ext: "jpg",
         fullpath: "fuyuko_what.jpg",
         author: "NPspencerHG",
+    },
+    koito_yeah: {
+        title: "YEAH!",
+        name: "koito_yeah",
+        ext: "png",
+        fullpath: "koito_yeah.png",
+        author: "watamotenoika",
     },
     yuika_onaroll: {
         title: "ただいま絶好調で～す!!",
@@ -93,13 +107,6 @@ export const stampList: StampList = {
         fullpath: "rinze_narimasita.png",
         author: "o0w0l",
     },
-    koito_yeah: {
-        title: "YEAH!",
-        name: "koito_yeah",
-        ext: "png",
-        fullpath: "koito_yeah.png",
-        author: "watamotenoika",
-    },
     asahi_gotit: {
         title: "わかったっす",
         name: "asahi_gotit",
@@ -121,12 +128,12 @@ export const stampList: StampList = {
         fullpath: "nichika_peka.png",
         author: "NPspencerHG",
     },
-    amtn_sweet: {
-        title: "やった～!!",
-        name: "amtn_sweet",
+    chiyoko_arrest: {
+        title: "たいほ！",
+        name: "chiyoko_arrest",
         ext: "png",
-        fullpath: "amtn_sweet.png",
-        author: "yamato_cogane",
+        fullpath: "chiyoko_arrest.png",
+        author: "murisuu_yaha",
     },
     rinze_foul: {
         title: "反則でございます。",
@@ -135,12 +142,12 @@ export const stampList: StampList = {
         fullpath: "rinze_foul.png",
         author: "murisuu_yaha",
     },
-    chiyoko_arrest: {
-        title: "たいほ！",
-        name: "chiyoko_arrest",
+    amtn_sweet: {
+        title: "やった～!!",
+        name: "amtn_sweet",
         ext: "png",
-        fullpath: "chiyoko_arrest.png",
-        author: "murisuu_yaha",
+        fullpath: "amtn_sweet.png",
+        author: "yamato_cogane",
     },
     askr_nice: {
         title: "いいね",
