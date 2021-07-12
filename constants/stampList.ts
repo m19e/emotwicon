@@ -9,6 +9,13 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    luca_sickness: {
+        title: "病んだ",
+        name: "luca_sickness",
+        ext: "png",
+        fullpath: "luca_sickness.png",
+        author: "o0w0l",
+    },
     juri_lgtm: {
         title: "いいんじゃねーか？",
         name: "juri_lgtm",
