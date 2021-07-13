@@ -20,8 +20,8 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            const data = getArrayFromStorage(`emotwicon/fav/${page}`);
-            setFavIds(data);
+            const favs = getArrayFromStorage(`emotwicon/fav/${page}`);
+            setFavIds(favs);
             setLoaded(true);
         }
     }, []);
