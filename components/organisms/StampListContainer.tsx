@@ -45,6 +45,17 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
         localStorage.setItem(key, data);
     };
 
+    const getBoolFromStorage = (key: string): boolean => {
+        const res = localStorage.getItem(key) ?? "false";
+        const data: boolean = res === "true";
+        return data;
+    };
+
+    const setBoolToStorage = (key: string, bool: boolean) => {
+        const data: string = bool ? "true" : "false";
+        localStorage.setItem(key, data);
+    };
+
     const toggleStampFav = (s: Stamp) => {
         setFavIds((prev) => {
             const newIds = s.fav ? prev.filter((id) => id !== s.name) : [...prev, s.name];
