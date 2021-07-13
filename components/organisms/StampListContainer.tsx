@@ -22,7 +22,10 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
     useEffect(() => {
         if (typeof window !== "undefined") {
             const favs = getArrayFromStorage(`emotwicon/fav/${page}`);
+            const left = getBoolFromStorage(`emotwicon/left`);
+
             setFavIds(favs);
+            setLeftHanded(left);
             setLoaded(true);
         }
     }, []);
