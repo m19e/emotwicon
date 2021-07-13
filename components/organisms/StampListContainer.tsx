@@ -68,6 +68,13 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
         });
     };
 
+    const toggleLeftHanded = () => {
+        setLeftHanded((prev) => {
+            setBoolToStorage(`emotwicon/left`, !prev);
+            return !prev;
+        });
+    };
+
     return (
         <main className="flex flex-col items-center flex-1 text-center">
             <div className="w-11/12 mb-2 inline-flex justify-end items-center">
