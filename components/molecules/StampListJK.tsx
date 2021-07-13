@@ -19,13 +19,13 @@ const StampList = ({ stamps, toggle, touchable, fav }: Props) => (
         {touchable ? (
             <>
                 {stamps.map((s, i) => (
-                    <MobileJK key={i} stamp={s} toggle={toggle} />
+                    <MobileJK key={i} stamp={s} toggle={toggle} leftHand />
                 ))}
             </>
         ) : (
             <>
                 {stamps.map((s, i) => (
-                    <DefaultJK key={i} stamp={s} toggle={toggle} />
+                    <DefaultJK key={i} stamp={s} toggle={toggle} leftHand />
                 ))}
             </>
         )}
