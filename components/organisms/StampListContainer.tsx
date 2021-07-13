@@ -78,7 +78,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
     return (
         <main className="flex flex-col items-center flex-1 text-center">
             <div className={"w-11/12 mb-2 inline-flex items-center justify-end " + (leftHanded ? "flex-row-reverse" : "")}>
-                <button onClick={toggleLeftHanded}>
+                <button className={"transform transition-transform duration-500 " + (leftHanded ? "rotate-180" : "rotate-0")} onClick={toggleLeftHanded}>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6 stroke-current text-gray-400 hover:text-gray-500 cursor-pointer"
