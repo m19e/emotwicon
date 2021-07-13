@@ -84,7 +84,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
                         (leftHanded ? "translate-x-0" : "translate-x-full -ml-32 pl-3")
                     }
                 >
-                    <button className={"transform transition-transform duration-500 " + (leftHanded ? "rotate-180" : "rotate-0")} onClick={toggleLeftHanded}>
+                    <button className={"transform transition-transform duration-700 " + (leftHanded ? "rotate-180" : "rotate-0")} onClick={toggleLeftHanded}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             className="h-6 w-6 stroke-current text-gray-400 hover:text-gray-500 cursor-pointer"
