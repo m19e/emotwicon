@@ -40,8 +40,8 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
         return data;
     };
 
-    const setFavIdsStorage = (key: string, ids: string[]) => {
-        const data = JSON.stringify(ids);
+    const setArrayToStorage = (key: string, array: string[]) => {
+        const data = JSON.stringify(array);
         localStorage.setItem(key, data);
     };
 
