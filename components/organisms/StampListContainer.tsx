@@ -15,6 +15,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
 
     const [favMode, setFavMode] = useState(false);
     const [favIds, setFavIds] = useState<string[]>([]);
+    const [leftHanded, setLeftHanded] = useState(false);
 
     const [loaded, setLoaded] = useState(false);
 
