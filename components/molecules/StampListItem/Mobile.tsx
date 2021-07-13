@@ -6,9 +6,10 @@ import CopyButton from "components/molecules/CopyButton";
 type Props = {
     stamp: Stamp;
     toggle: (s: Stamp) => void;
+    leftHand: boolean;
 };
 
-const Mobile = ({ stamp, toggle }: Props) => {
+const Mobile = ({ stamp, toggle, leftHand }: Props) => {
     const [active, setActive] = useState(false);
 
     return (
@@ -63,7 +64,7 @@ const Mobile = ({ stamp, toggle }: Props) => {
     );
 };
 
-export const MobileJK = ({ stamp, toggle }: Props) => {
+export const MobileJK = ({ stamp, toggle, leftHand }: Props) => {
     const [active, setActive] = useState(false);
 
     return (

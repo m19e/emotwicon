@@ -5,9 +5,10 @@ import CopyButton from "components/molecules/CopyButton";
 type Props = {
     stamp: Stamp;
     toggle: (s: Stamp) => void;
+    leftHand: boolean;
 };
 
-const Default = ({ stamp, toggle }: Props) => (
+const Default = ({ stamp, toggle, leftHand }: Props) => (
     <div className="w-44 h-44 max-w-full flex-center relative rounded-2xl bg-white border-2 border-gray-200">
         <div className="relative group">
             <div className="flex-center transition-opacity group-hover:opacity-10">
@@ -56,7 +57,7 @@ const Default = ({ stamp, toggle }: Props) => (
     </div>
 );
 
-export const DefaultJK = ({ stamp, toggle }: Props) => {
+export const DefaultJK = ({ stamp, toggle, leftHand }: Props) => {
     return (
         <div className="w-44 h-44 max-w-full flex-center relative rounded-2xl bg-white border-2 border-gray-200">
             <div className="relative group">
