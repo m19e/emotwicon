@@ -20,7 +20,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
 
     useEffect(() => {
         if (typeof window !== "undefined") {
-            const data = getFavIds(`emotwicon/fav/${page}`);
+            const data = getArrayFromStorage(`emotwicon/fav/${page}`);
             setFavIds(data);
             setLoaded(true);
         }
@@ -34,7 +34,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
         }
     }, [favIds]);
 
-    const getFavIds = (key: string): string[] => {
+    const getArrayFromStorage = (key: string): string[] => {
         const res = localStorage.getItem(key);
         const data: string[] = res === null ? [] : JSON.parse(res);
         return data;
