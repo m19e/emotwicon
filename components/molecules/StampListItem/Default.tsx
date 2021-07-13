@@ -34,7 +34,7 @@ const Default = ({ stamp, toggle, leftHand }: Props) => (
                 </div>
             </div>
         </div>
-        <div className="absolute z-20 -bottom-2 -right-2 inline-flex justify-end">
+        <div className={"absolute z-20 -bottom-2 inline-flex justify-end " + (leftHand ? "-left-2" : "-right-2")}>
             <button
                 className={"rounded-full p-1 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
                 onClick={() => toggle(stamp)}
@@ -84,7 +84,7 @@ export const DefaultJK = ({ stamp, toggle, leftHand }: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="absolute z-20 -bottom-2 -right-2 inline-flex justify-end">
+            <div className={"absolute z-20 -bottom-2 inline-flex justify-end " + (leftHand ? "-left-2" : "-right-2")}>
                 <button
                     className={"rounded-full p-1 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
                     onClick={() => toggle(stamp)}
