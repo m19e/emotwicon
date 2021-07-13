@@ -128,8 +128,12 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
                     </div>
                 </div>
             )}
-            {page === "default" && <StampList stamps={favMode ? favStamps : rootStamps} toggle={toggleStampFav} touchable={touchable} fav={favMode} />}
-            {page === "jk" && <StampListJK stamps={favMode ? favStamps : rootStamps} toggle={toggleStampFav} touchable={touchable} fav={favMode} />}
+            {page === "default" && (
+                <StampList stamps={favMode ? favStamps : rootStamps} toggle={toggleStampFav} touchable={touchable} fav={favMode} leftHand={leftHanded} />
+            )}
+            {page === "jk" && (
+                <StampListJK stamps={favMode ? favStamps : rootStamps} toggle={toggleStampFav} touchable={touchable} fav={favMode} leftHand={leftHanded} />
+            )}
         </main>
     );
 };
