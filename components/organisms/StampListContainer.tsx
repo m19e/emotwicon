@@ -80,7 +80,7 @@ const StampListContainer = ({ stamps, touchable, page }: Props) => {
             <div className="w-11/12 mb-2 inline-flex items-center overflow-hidden">
                 <div
                     className={
-                        "w-full inline-flex items-center transition-transform ease-out duration-700 transform " +
+                        "w-full inline-flex items-center transition-transform ease-out duration-700 transform-gpu " +
                         (leftHanded ? "translate-x-0" : "translate-x-full -ml-32 pl-3")
                     }
                 >
