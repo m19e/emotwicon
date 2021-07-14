@@ -7,9 +7,10 @@ type Props = {
     toggle: (s: Stamp) => void;
     touchable: boolean;
     fav: boolean;
+    leftHand: boolean;
 };
 
-const StampList = ({ stamps, toggle, touchable, fav }: Props) => (
+const StampList = ({ stamps, toggle, touchable, fav, leftHand }: Props) => (
     <div className="w-11/12 mb-2 grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
         {stamps.length === 0 && (
             <div className={"w-44 h-44 max-w-full flex-center rounded-2xl bg-white border-2 border-gray-200 " + (fav ? "" : "opacity-0")}>
@@ -19,13 +20,13 @@ const StampList = ({ stamps, toggle, touchable, fav }: Props) => (
         {touchable ? (
             <>
                 {stamps.map((s, i) => (
-                    <Mobile key={i} stamp={s} toggle={toggle} />
+                    <Mobile key={i} stamp={s} toggle={toggle} leftHand={leftHand} />
                 ))}
             </>
         ) : (
             <>
                 {stamps.map((s, i) => (
-                    <Default key={i} stamp={s} toggle={toggle} />
+                    <Default key={i} stamp={s} toggle={toggle} leftHand={leftHand} />
                 ))}
             </>
         )}

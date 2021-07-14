@@ -5,9 +5,10 @@ import CopyButton from "components/molecules/CopyButton";
 type Props = {
     stamp: Stamp;
     toggle: (s: Stamp) => void;
+    leftHand: boolean;
 };
 
-const Default = ({ stamp, toggle }: Props) => (
+const Default = ({ stamp, toggle, leftHand }: Props) => (
     <div className="w-44 h-44 max-w-full flex-center relative rounded-2xl bg-white border-2 border-gray-200">
         <div className="relative group">
             <div className="flex-center transition-opacity group-hover:opacity-10">
@@ -33,7 +34,7 @@ const Default = ({ stamp, toggle }: Props) => (
                 </div>
             </div>
         </div>
-        <div className="absolute z-20 -bottom-2 -right-2 inline-flex justify-end">
+        <div className={"absolute z-20 -bottom-2 inline-flex justify-end " + (leftHand ? "-left-2" : "-right-2")}>
             <button
                 className={"rounded-full p-1 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
                 onClick={() => toggle(stamp)}
@@ -56,7 +57,7 @@ const Default = ({ stamp, toggle }: Props) => (
     </div>
 );
 
-export const DefaultJK = ({ stamp, toggle }: Props) => {
+export const DefaultJK = ({ stamp, toggle, leftHand }: Props) => {
     return (
         <div className="w-44 h-44 max-w-full flex-center relative rounded-2xl bg-white border-2 border-gray-200">
             <div className="relative group">
@@ -83,7 +84,7 @@ export const DefaultJK = ({ stamp, toggle }: Props) => {
                     </div>
                 </div>
             </div>
-            <div className="absolute z-20 -bottom-2 -right-2 inline-flex justify-end">
+            <div className={"absolute z-20 -bottom-2 inline-flex justify-end " + (leftHand ? "-left-2" : "-right-2")}>
                 <button
                     className={"rounded-full p-1 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
                     onClick={() => toggle(stamp)}

@@ -6,9 +6,10 @@ import CopyButton from "components/molecules/CopyButton";
 type Props = {
     stamp: Stamp;
     toggle: (s: Stamp) => void;
+    leftHand: boolean;
 };
 
-const Mobile = ({ stamp, toggle }: Props) => {
+const Mobile = ({ stamp, toggle, leftHand }: Props) => {
     const [active, setActive] = useState(false);
 
     return (
@@ -39,7 +40,7 @@ const Mobile = ({ stamp, toggle }: Props) => {
                     </div>
                 )}
             </div>
-            <div className="absolute z-20 -bottom-2 -right-2 inline-flex justify-end">
+            <div className={"absolute z-20 -bottom-2 inline-flex justify-end " + (leftHand ? "-left-2" : "-right-2")}>
                 <button
                     className={"rounded-full p-1 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
                     onClick={() => toggle(stamp)}
@@ -63,7 +64,7 @@ const Mobile = ({ stamp, toggle }: Props) => {
     );
 };
 
-export const MobileJK = ({ stamp, toggle }: Props) => {
+export const MobileJK = ({ stamp, toggle, leftHand }: Props) => {
     const [active, setActive] = useState(false);
 
     return (
@@ -94,7 +95,7 @@ export const MobileJK = ({ stamp, toggle }: Props) => {
                     </div>
                 )}
             </div>
-            <div className="absolute z-20 -bottom-2 -right-2 inline-flex justify-end">
+            <div className={"absolute z-20 -bottom-2 inline-flex justify-end " + (leftHand ? "-left-2" : "-right-2")}>
                 <button
                     className={"rounded-full p-1 transition-colors duration-500 ease-out " + (stamp.fav ? "bg-gray-400" : "bg-gray-300")}
                     onClick={() => toggle(stamp)}
