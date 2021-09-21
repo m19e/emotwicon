@@ -10,7 +10,7 @@ export const defaultStamp: Stamp = {
 
 export const stampList: StampList = {
     nichika_bank: {
-        title: "",
+        title: "っっ",
         name: "nichika_bank",
         ext: "jpg",
         fullpath: "nichika_bank.jpg",
