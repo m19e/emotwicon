@@ -9,6 +9,13 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    nichika_bank: {
+        title: "",
+        name: "nichika_bank",
+        ext: "jpg",
+        fullpath: "nichika_bank.jpg",
+        author: "_eruru0x0_",
+    },
     asakaho_gogo: {
         title: "GOGO!",
         name: "asakaho_gogo",
