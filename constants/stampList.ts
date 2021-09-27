@@ -9,6 +9,27 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    tenka_holiday: {
+        title: "今日はお休み",
+        name: "tenka_holiday",
+        ext: "jpg",
+        fullpath: "tenka_holiday.jpg",
+        author: "shibainuMk_2",
+    },
+    asakaho_gogo: {
+        title: "GOGO!",
+        name: "asakaho_gogo",
+        ext: "jpg",
+        fullpath: "asakaho_gogo.jpg",
+        author: "shibainuMk_2",
+    },
+    nichika_muki: {
+        title: "ムッキムキなので！",
+        name: "nichika_muki",
+        ext: "jpg",
+        fullpath: "nichika_muki.jpg",
+        author: "shibainuMk_2",
+    },
     nichika_mukimuki: {
         title: "むきむき!",
         name: "nichika_mukimuki",
@@ -23,18 +44,19 @@ export const stampList: StampList = {
         fullpath: "nichika_bank.jpg",
         author: "_eruru0x0_",
     },
-    asakaho_gogo: {
-        title: "GOGO!",
-        name: "asakaho_gogo",
-        ext: "jpg",
-        fullpath: "asakaho_gogo.jpg",
-        author: "shibainuMk_2",
-    },
+
     mikoto_sure: {
         title: "いいよ",
         name: "mikoto_sure",
         ext: "png",
         fullpath: "mikoto_sure.png",
+        author: "gomame_rabbit",
+    },
+    juri_lgtm: {
+        title: "いいんじゃねーか？",
+        name: "juri_lgtm",
+        ext: "png",
+        fullpath: "juri_lgtm.png",
         author: "gomame_rabbit",
     },
     luca_sickness: {
@@ -44,40 +66,12 @@ export const stampList: StampList = {
         fullpath: "luca_sickness.png",
         author: "o0w0l",
     },
-    juri_lgtm: {
-        title: "いいんじゃねーか？",
-        name: "juri_lgtm",
-        ext: "png",
-        fullpath: "juri_lgtm.png",
-        author: "gomame_rabbit",
-    },
-    mano_howa: {
-        title: "ほわ～っ♡",
-        name: "mano_howa",
-        ext: "png",
-        fullpath: "mano_howa.png",
-        author: "DELU_shinybald",
-    },
-    nichika_muki: {
-        title: "ムッキムキなので！",
-        name: "nichika_muki",
-        ext: "jpg",
-        fullpath: "nichika_muki.jpg",
-        author: "shibainuMk_2",
-    },
     mamimi_donmai: {
         title: "どんまぁい",
         name: "mamimi_donmai",
         ext: "png",
         fullpath: "mamimi_donmai.png",
         author: "o0w0l",
-    },
-    nekomine_night: {
-        title: "オヤスミネ",
-        name: "nekomine_night",
-        ext: "jpg",
-        fullpath: "nekomine_night.jpg",
-        author: "Tight_Shiva",
     },
     thinking_koito: {
         title: "thinking_koito",
@@ -86,19 +80,26 @@ export const stampList: StampList = {
         fullpath: "thinking_koito.png",
         author: "o0w0l",
     },
+    mano_howa: {
+        title: "ほわ～っ♡",
+        name: "mano_howa",
+        ext: "png",
+        fullpath: "mano_howa.png",
+        author: "DELU_shinybald",
+    },
+    nekomine_night: {
+        title: "オヤスミネ",
+        name: "nekomine_night",
+        ext: "jpg",
+        fullpath: "nekomine_night.jpg",
+        author: "Tight_Shiva",
+    },
     madoka_morning: {
         title: "おはようございます",
         name: "madoka_morning",
         ext: "jpg",
         fullpath: "madoka_morning.jpg",
         author: "cy__ms",
-    },
-    fuyuko_what: {
-        title: "何！？",
-        name: "fuyuko_what",
-        ext: "jpg",
-        fullpath: "fuyuko_what.jpg",
-        author: "NPspencerHG",
     },
     koito_yeah: {
         title: "YEAH!",
@@ -154,6 +155,13 @@ export const stampList: StampList = {
         name: "asahi_gotit",
         ext: "png",
         fullpath: "asahi_gotit.png",
+        author: "NPspencerHG",
+    },
+    fuyuko_what: {
+        title: "何！？",
+        name: "fuyuko_what",
+        ext: "jpg",
+        fullpath: "fuyuko_what.jpg",
         author: "NPspencerHG",
     },
     koito_pyaa: {
