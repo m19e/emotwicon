@@ -9,6 +9,28 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    natsuha_delicious: {
+        title: "おいしいわ!!",
+        name: "natsuha_delicious",
+        ext: "png",
+        fullpath: "natsuha_delicious.png",
+        author: "noe_aoikaba",
+    },
+    kiriko_dayoff_fix: {
+        title: "お休みにしたほうがいいと思うんです…!!",
+        name: "kiriko_dayoff_fix",
+        ext: "png",
+        fullpath: "kiriko_dayoff_fix.png",
+        author: "noe_aoikaba",
+    },
+    yuika_onaroll: {
+        title: "ただいま絶好調で～す!!",
+        name: "yuika_onaroll",
+        ext: "PNG",
+        fullpath: "yuika_onaroll.PNG",
+        author: "noe_aoikaba",
+    },
+
     tenka_holiday: {
         title: "今日はお休み",
         name: "tenka_holiday",
@@ -44,7 +66,6 @@ export const stampList: StampList = {
         fullpath: "nichika_bank.jpg",
         author: "_eruru0x0_",
     },
-
     mikoto_sure: {
         title: "いいよ",
         name: "mikoto_sure",
@@ -107,20 +128,6 @@ export const stampList: StampList = {
         ext: "png",
         fullpath: "koito_yeah.png",
         author: "watamotenoika",
-    },
-    yuika_onaroll: {
-        title: "ただいま絶好調で～す!!",
-        name: "yuika_onaroll",
-        ext: "PNG",
-        fullpath: "yuika_onaroll.PNG",
-        author: "noe_aoikaba",
-    },
-    kiriko_dayoff: {
-        title: "お休みにしたほうがいいと思うんです…!!",
-        name: "kiriko_dayoff",
-        ext: "PNG",
-        fullpath: "kiriko_dayoff.PNG",
-        author: "noe_aoikaba",
     },
     natsuha_bravo: {
         title: "ブラボーよ！",
