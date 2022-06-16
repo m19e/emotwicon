@@ -9,6 +9,13 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    madoka_goodnight: {
+        title: "寝な、グッナイ",
+        name: "madoka_goodnight",
+        ext: "jpg",
+        fullpath: "madoka_goodnight.jpg",
+        author: "ma4kaku10fu",
+    },
     natsuha_delicious: {
         title: "おいしいわ!!",
         name: "natsuha_delicious",
