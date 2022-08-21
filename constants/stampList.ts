@@ -9,7 +9,7 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
-    meguru_earlybird: {
+    meguru_earlybird_fix: {
         title: "おきたよー！",
         name: "meguru_earlybird_fix",
         ext: "jpg",
