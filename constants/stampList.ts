@@ -9,6 +9,34 @@ export const defaultStamp: Stamp = {
 };
 
 export const stampList: StampList = {
+    meguru_earlybird: {
+        title: "おきたよー！",
+        name: "meguru_earlybird",
+        ext: "jpg",
+        fullpath: "meguru_earlybird.jpg",
+        author: "shibainuMk_2",
+    },
+    tenka_holiday: {
+        title: "今日はお休み",
+        name: "tenka_holiday",
+        ext: "jpg",
+        fullpath: "tenka_holiday.jpg",
+        author: "shibainuMk_2",
+    },
+    asakaho_gogo: {
+        title: "GOGO!",
+        name: "asakaho_gogo",
+        ext: "jpg",
+        fullpath: "asakaho_gogo.jpg",
+        author: "shibainuMk_2",
+    },
+    nichika_muki: {
+        title: "ムッキムキなので！",
+        name: "nichika_muki",
+        ext: "jpg",
+        fullpath: "nichika_muki.jpg",
+        author: "shibainuMk_2",
+    },
     madoka_goodnight: {
         title: "寝な、グッナイ",
         name: "madoka_goodnight",
@@ -36,28 +64,6 @@ export const stampList: StampList = {
         ext: "PNG",
         fullpath: "yuika_onaroll.PNG",
         author: "noe_aoikaba",
-    },
-
-    tenka_holiday: {
-        title: "今日はお休み",
-        name: "tenka_holiday",
-        ext: "jpg",
-        fullpath: "tenka_holiday.jpg",
-        author: "shibainuMk_2",
-    },
-    asakaho_gogo: {
-        title: "GOGO!",
-        name: "asakaho_gogo",
-        ext: "jpg",
-        fullpath: "asakaho_gogo.jpg",
-        author: "shibainuMk_2",
-    },
-    nichika_muki: {
-        title: "ムッキムキなので！",
-        name: "nichika_muki",
-        ext: "jpg",
-        fullpath: "nichika_muki.jpg",
-        author: "shibainuMk_2",
     },
     nichika_mukimuki: {
         title: "むきむき!",
